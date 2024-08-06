@@ -12,6 +12,7 @@ Hierarchy:
         - ref!! 9afd721c-88ca-486d-bd0a-6ddc88f6768a
         - ref!! f77113ff-e116-4a70-b792-497333c622f4
         - ref!! ccd59e26-3b27-4480-ba13-8aed70680f89
+        - ref!! b7d13558-16c2-434d-a762-a88bf10014a4
         - ref!! 27bd80bf-dfec-4da5-8103-a479b5d1ca24
         - ref!! 71a23eb6-a4a3-4657-8dd6-ea0a54b6048e
         - ref!! 849f15e1-40b3-480d-9230-011e2171c308
@@ -40,6 +41,7 @@ Hierarchy:
         - ref!! af34d88a-4386-46ae-adbc-f9985dfd2e60
         - ref!! f5f46a5c-e715-4894-a102-8487fde08541
         - ref!! 688beb6b-8ea3-4fe7-bcb9-266c4a369f7b
+        - ref!! afa67506-e3c8-402f-a285-5c41ac6bda07
     Parts:
         -   Folder: Snipers
             Entity:
@@ -191,6 +193,149 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: 52529d53-a6e9-495f-9e25-317637f3b046
+                Name: Bullettrail
+                Components:
+                    f64803bed11dc146a051377a1f0dd811: !TransformComponent
+                        Id: 27379108-de81-4419-91df-879e2247fd02
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b2e8f21fd1cd9f42a98b5df3285b58c1: !ParticleSystemComponent
+                        Id: 3504d827-02dc-4914-92ae-02160a15fa9c
+                        Control:
+                            ResetSeconds: 3.0
+                            Control: Play
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Speed: 1.0
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: null
+                            Emitters:
+                                a69514f7e76a3947a388fab4b17b40e3:
+                                    EmitterName: trail
+                                    MaxParticlesOverride: 50
+                                    ParticleLifetime: {X: 1.0, Y: 1.0}
+                                    SortingPolicy: ByOrder
+                                    ShapeBuilder: !ShapeBuilderRibbon
+                                        SmoothingPolicy: Best
+                                        Segments: 15
+                                        TextureCoordinatePolicy: Stretched
+                                        TexCoordsFactor: 1.0
+                                        UVRotate:
+                                            FlipX: false
+                                            FlipY: false
+                                            UVClockwise: Degree0
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 0.5
+                                        ComputeColor: !ComputeBinaryColor
+                                            Operator: Multiply
+                                            LeftChild: !ComputeFloat4
+                                                Value: {X: 5.0, Y: 5.0, Z: 5.0, W: 1.0}
+                                            RightChild: !ComputeBinaryColor
+                                                Operator: Multiply
+                                                LeftChild: !ComputeTextureColor
+                                                    Texture: 2c8e60e4-e070-4124-a1fa-f36cc74de76c:Textures/Bullettrail01
+                                                    FallbackValue:
+                                                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                    Scale: {X: 1.0, Y: 1.0}
+                                                    Offset: {X: 0.0, Y: 0.0}
+                                                    Swizzle: null
+                                                RightChild: !ComputeVertexStreamColor
+                                                    Stream: !ColorVertexStreamDefinition {}
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        49a593b25a626a4a9ae6abd1e6d80a01: !SpawnerPerSecond
+                                            LoopCondition: Looping
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 50.0
+                                    Initializers:
+                                        77e504c4ae8c8b40b3e86fc2f2159927: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: -0.1, Y: 0.4, Z: -0.1}
+                                            VelocityMax: {X: 0.1, Y: 0.4, Z: 0.1}
+                                        b81a1444d030c3418f4268a112f3495e: !InitialSpawnOrder
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                    Updaters:
+                                        f5dcc863ffffb248a240f9a87c4986d4: !UpdaterSizeOverTime
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            SamplerMain: !ComputeCurveSamplerFloat
+                                                Curve: !ComputeAnimationCurveFloat
+                                                    KeyFrames:
+                                                        a1df6c8fa767cc4c9256ed22cb99047e:
+                                                            Key: 0.0
+                                                            Value: 0.1
+                                                            TangentType: Linear
+                                                        069b80707306b341902968bc4a16cff9:
+                                                            Key: 0.9
+                                                            Value: 0.0
+                                                            TangentType: Linear
+                                            SamplerOptional: null
+                                            SeedOffset: 0
+                                        4b4b8636d557404f89e237f792878df3: !UpdaterColorOverTime
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            SamplerMain: !ComputeCurveSamplerColor4
+                                                Curve: !ComputeAnimationCurveColor4
+                                                    KeyFrames:
+                                                        5ba51e26ba02014281f963a86f91993d:
+                                                            Key: 0.0
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.5}
+                                                            TangentType: Linear
+                                                        772e3919fe5c9b41aa10618cb4e9abbc:
+                                                            Key: 1.0
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.0}
+                                                            TangentType: Linear
+                                            SamplerOptional: null
+                                            SeedOffset: 0
+            Base:
+                BasePartAsset: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
+                BasePartId: 46fbefaf-3826-4e5a-a2af-5439860b2f35
+                InstanceId: d0ffa432-658e-489c-b7d3-cb2c1c767940
         -   Folder: DefensePlatforms
             Entity:
                 Id: 53298033-adb3-4f8c-bebd-38baed661224
@@ -373,7 +518,7 @@ Hierarchy:
                         Id: a9647e11-cd0f-4730-a0b9-c006c1ce1754
                         speed: 0.5
                         target: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
-                        projectile: null
+                        projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         particleSystem: ref!! 26186c15-d1f2-465a-ba12-bc30d53b39cd
                         stoppingDistance: 0.0
         -   Folder: Tanks
@@ -563,7 +708,7 @@ Hierarchy:
                                         ForceTexCoords: false
                                     Spawners:
                                         7a950fef1afb7047aa538aadb79e6891: !SpawnerBurst
-                                            LoopCondition: Looping
+                                            LoopCondition*: OneShot
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
                                             SpawnCount: 1
@@ -695,7 +840,7 @@ Hierarchy:
                                         ForceTexCoords: false
                                     Spawners:
                                         790d7d7371b24e4ea0fd8854a254b9bb: !SpawnerBurst
-                                            LoopCondition: Looping
+                                            LoopCondition*: OneShot
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
                                             SpawnCount: 10
@@ -811,6 +956,66 @@ Hierarchy:
                             CurrentFrame: 9
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: afa67506-e3c8-402f-a285-5c41ac6bda07
+                Name: BulletController
+                Components:
+                    1bd8a2ec6b00adc81575c62985538b37: !TransformComponent
+                        Id: f04c69a8-05e0-4bb3-a18c-1eae78b93c81
+                        Position: {X: 4.179355, Y: 4.7317314, Z: -9.387161}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            221e5f85334bea8fe3d03c95e59fc079: ref!! 27379108-de81-4419-91df-879e2247fd02
+                    5f0d6477c94bfaed723330c7b7041e55: !Ubaldis.BulletController,Ubaldis
+                        Id: 2926505f-a34e-4001-90c8-909a17fe1964
+                        direction: false
+                        speed: 10.0
+            Base:
+                BasePartAsset: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
+                BasePartId: b25248d7-50d7-4d83-bbaa-efc7a8bd4519
+                InstanceId: d0ffa432-658e-489c-b7d3-cb2c1c767940
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: b7d13558-16c2-434d-a762-a88bf10014a4
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 34a562e4-ce3d-43de-8fa7-23ee8413c054
+                        Position: {X: 2.049931, Y: -1.833137, Z: -9.520581}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 15.174996, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 71f3abca-f7d1-42db-a33d-b0b9b93a4414
+                        Enabled: false
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 8e315f89-e854-4d6f-a9a7-736d746983de
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: DefensePlatforms
             Entity:
                 Id: b9904292-d822-4186-b600-a3c7bdf9033d
@@ -847,6 +1052,28 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: f03b0840-1f66-4eca-9716-b5ff7b7dffaf
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: DefensePlatforms
             Entity:
                 Id: cd4bd3eb-bd49-447a-a23a-18b660ea7084
