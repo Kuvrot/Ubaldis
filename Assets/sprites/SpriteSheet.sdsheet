@@ -1,0 +1,120 @@
+!SpriteSheet
+Id: 10f31d5e-b32e-4365-848a-ad0906cdea58
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    c5ef1f856837d487cc991bd729ed8aa3:
+        Source: !file ../../Resources/sprites/014.png
+        Name: 014
+        TextureRegion: {X: 0, Y: 0, Width: 2047, Height: 1536}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    66f1ed17193067e522bfe5acccd3846b:
+        Source: !file ../../../../../../Projects/DeadGunner/Background/Defense/data/015.png
+        Name: 015
+        TextureRegion: {X: 0, Y: 0, Width: 1920, Height: 1280}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    a568f914e0eb4819fec9f168b4216a05:
+        Source: !file ../../Resources/sprites/000.png
+        Name: 000
+        TextureRegion: {X: 0, Y: 0, Width: 2565, Height: 1332}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    6374190af000bcf14ea1098f9553c6bb:
+        Source: !file ../../Resources/sprites/001.png
+        Name: 001
+        TextureRegion: {X: 0, Y: 0, Width: 95, Height: 123}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    8af84a30e86b9db765994278f074a880:
+        Source: !file ../../Resources/sprites/002.png
+        Name: 002
+        TextureRegion: {X: 0, Y: 0, Width: 133, Height: 65}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    4579cd99ee4c41a933cf072a00568318:
+        Source: !file ../../Resources/sprites/003.png
+        Name: 003
+        TextureRegion: {X: 0, Y: 0, Width: 90, Height: 71}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    61f74569f41a7f0aeda75ed5d75f93b5:
+        Source: !file ../../Resources/sprites/004.png
+        Name: 004
+        TextureRegion: {X: 0, Y: 0, Width: 110, Height: 48}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    bd502755ac40871f24f763a9ba9ffed3:
+        Source: !file ../../Resources/sprites/005.png
+        Name: 005
+        TextureRegion: {X: 0, Y: 0, Width: 134, Height: 93}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    98c603dba70c9ba0b761f827a1241340:
+        Source: !file ../../Resources/sprites/006.png
+        Name: 006
+        TextureRegion: {X: 0, Y: 0, Width: 116, Height: 226}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    500f13ea7379136f40aaa18c713bb5b7:
+        Source: !file ../../Resources/sprites/007.png
+        Name: 007
+        TextureRegion: {X: 0, Y: 0, Width: 153, Height: 173}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    3bb45ccc9d54a0b50d5ba6cb1c3eb38a:
+        Source: !file ../../Resources/sprites/008.png
+        Name: 008
+        TextureRegion: {X: 0, Y: 0, Width: 1920, Height: 1280}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    6273e37b11011258dea0688d22fa6b23:
+        Source: !file ../../Resources/sprites/009.png
+        Name: 009
+        TextureRegion: {X: 0, Y: 0, Width: 262, Height: 238}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    3e008395f469d3e4efad97263c278acf:
+        Source: !file ../../Resources/sprites/010.png
+        Name: 010
+        TextureRegion: {X: 0, Y: 0, Width: 262, Height: 238}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    df7a51bb6b1a08f7bdf1384f577790f3:
+        Source: !file ../../Resources/sprites/011.png
+        Name: 011
+        TextureRegion: {X: 0, Y: 0, Width: 262, Height: 238}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    8625b03fbca9ccf7ca3247d2fb82b18d:
+        Source: !file ../../Resources/sprites/012.png
+        Name: 012
+        TextureRegion: {X: 0, Y: 0, Width: 1600, Height: 1034}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    922704bf43f199ab415769d3a03326de:
+        Source: !file ../../Resources/sprites/013.png
+        Name: 013
+        TextureRegion: {X: 0, Y: 0, Width: 2242, Height: 1252}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

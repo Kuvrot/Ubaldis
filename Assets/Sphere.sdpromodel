@@ -1,0 +1,12 @@
+!ProceduralModelAsset
+Id: d1c8e7e4-f550-4f8b-90ef-bc0e3f9d52ea
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: !SphereProceduralModel
+    Tessellation: 30
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    NumberOfTextureCoordinates: 10
+    MaterialInstance:
+        Material: 8df4d62e-35a2-4f8b-8c10-b255e612e243:Sphere Material

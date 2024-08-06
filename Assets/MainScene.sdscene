@@ -1,0 +1,938 @@
+!SceneAsset
+Id: e49aad95-251c-4aa5-9f99-119313b7d7da
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 7cf8d868-bbf9-4aaa-acbb-8da29820c3a1
+        - ref!! 2afa4f78-effd-4257-aa8b-04d41b6dc1a7
+        - ref!! 548bcffe-f897-469c-b5d2-fad6b9be05cc
+        - ref!! 9afd721c-88ca-486d-bd0a-6ddc88f6768a
+        - ref!! f77113ff-e116-4a70-b792-497333c622f4
+        - ref!! ccd59e26-3b27-4480-ba13-8aed70680f89
+        - ref!! 27bd80bf-dfec-4da5-8103-a479b5d1ca24
+        - ref!! 71a23eb6-a4a3-4657-8dd6-ea0a54b6048e
+        - ref!! 849f15e1-40b3-480d-9230-011e2171c308
+        - ref!! 8610e94b-9287-4700-8141-db163069df32
+        - ref!! b9904292-d822-4186-b600-a3c7bdf9033d
+        - ref!! e88c31a3-57ef-421e-bc4b-fccea047fbfa
+        - ref!! 6af70b06-5c5e-41db-9767-38eb5940e84d
+        - ref!! 2d592258-bcb0-4985-b259-2da910b24ca0
+        - ref!! aaf9ee64-b461-4556-9983-32711e99ba8f
+        - ref!! 39d22fc0-7087-403e-8330-25aa00c5a585
+        - ref!! cd4bd3eb-bd49-447a-a23a-18b660ea7084
+        - ref!! 53298033-adb3-4f8c-bebd-38baed661224
+        - ref!! 59dd0570-83ba-4ef5-b737-4cf8e88ca12b
+        - ref!! a22ecb59-25ab-46b1-8980-eb6d3b5d6b08
+        - ref!! 86fd7ed3-7de9-4631-9201-7b5ce2684570
+        - ref!! f7d96101-d808-4a32-9b3c-65f04473ae59
+        - ref!! 3a45e602-6bb7-4ad5-a543-c64f94af6134
+        - ref!! 7a764b91-9eac-4952-8c25-7aabdd12ffdd
+        - ref!! 10cb6ae9-5a61-4e89-bd99-eef30fbd5273
+        - ref!! 40b33881-f524-4c23-b1bf-1c28e4d2e7e4
+        - ref!! 6f755474-b27d-42ac-9df1-bd4a0e89d9c6
+        - ref!! 57e2d4e6-29db-4475-a70c-bf772af4f392
+        - ref!! 4b05a3ea-6438-4379-8388-3d6b3fb80439
+        - ref!! a84a7548-680a-4620-9178-794720e54420
+        - ref!! 801f4264-0af9-41f5-8f29-7fefc6d7e643
+        - ref!! af34d88a-4386-46ae-adbc-f9985dfd2e60
+        - ref!! f5f46a5c-e715-4894-a102-8487fde08541
+        - ref!! 688beb6b-8ea3-4fe7-bcb9-266c4a369f7b
+    Parts:
+        -   Folder: Snipers
+            Entity:
+                Id: 10cb6ae9-5a61-4e89-bd99-eef30fbd5273
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 3bcf65e4-b74e-4fbc-bfcb-565963bdde3c
+                        Position: {X: 7.599269, Y: -3.290997, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.024756419, W: 0.9996935}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 30ec2d39-ee0d-4680-92be-e2c226dc0748
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 11
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 27bd80bf-dfec-4da5-8103-a479b5d1ca24
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: ff1e8247-18c4-4990-b4e0-672149ce4805
+                        Position: {X: 0.24192944, Y: -1.7548708, Z: -9.391208}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 4be85a6b-e05c-431b-8086-5a26eb8ff0cf
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
+                Id: 2afa4f78-effd-4257-aa8b-04d41b6dc1a7
+                Name: Camera
+                Components:
+                    f411d182b101d3bd09684729fb924636: !TransformComponent
+                        Id: 7f9679ca-aef1-4ab7-aed9-5189ba2c6dfa
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ade3c66f674bf41eefc751a4d8f2461a: !CameraComponent
+                        Id: ffbaf5d1-6ede-4da5-81b9-e72b4d224f82
+                        Name: null
+                        Projection: Orthographic
+                        Slot: 3167475e-7ee1-436a-b5b0-019b5997ba2f
+                    7ea780a2e1ec7ae5c6b6c6c4950f463b: !Ubaldis.BasicCameraController,Ubaldis
+                        Id: 1e41d6db-2474-43a1-b2fe-700fb5b672df
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 2d592258-bcb0-4985-b259-2da910b24ca0
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 16fe5809-0898-4366-bb95-5a3150b2cb52
+                        Position: {X: 8.123464, Y: -1.7252157, Z: -9.391232}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: dfbb056c-8b7e-453b-b578-859c8a5de71b
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 39d22fc0-7087-403e-8330-25aa00c5a585
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 08e3fbdf-010a-4021-af28-b392b55ddb8a
+                        Position: {X: 3.586093, Y: -1.7784337, Z: -9.391209}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: fe49d616-fbcd-4291-b0ae-baaa7c0d8c83
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 3a45e602-6bb7-4ad5-a543-c64f94af6134
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 93aaf405-afe4-4feb-b0c2-faa3083eb554
+                        Position: {X: 5.9104643, Y: -3.2787147, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.024756419, W: 0.9996935}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 7364d7d3-ed5b-43de-9411-5fcf2d3cebe5
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 11
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 40b33881-f524-4c23-b1bf-1c28e4d2e7e4
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: fece1400-1ff9-4691-9c90-3d51f15bbb55
+                        Position: {X: 7.568387, Y: -2.8999183, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.1738918, W: 0.98476475}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 0f3de44f-9824-4a9b-9028-ae868d753b9b
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 8
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Tanks
+            Entity:
+                Id: 4b05a3ea-6438-4379-8388-3d6b3fb80439
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: a06a2fdb-0152-4c1a-bdee-a5f1535a4d66
+                        Position: {X: -0.17089081, Y: -3.242446, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 14bb9973-40cc-450d-87d0-9257d44a102d
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 53298033-adb3-4f8c-bebd-38baed661224
+                Name: Defense
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: c7f4d3fa-c5e4-407f-a787-65c1d287f2f7
+                        Position: {X: -0.8592957, Y: -1.7877183, Z: -9.391197}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: dd581d4a-fbc3-4742-b3e0-8879342688c8
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
+                Id: 548bcffe-f897-469c-b5d2-fad6b9be05cc
+                Name: Background
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 37a07cb5-1252-4295-8b0e-c60058705377
+                        Position: {X: 3.3740792, Y: 0.13456899, Z: -27.377672}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 257a5d4e-3489-4b84-9b7e-cfc44034660e
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 14
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Tanks
+            Entity:
+                Id: 57e2d4e6-29db-4475-a70c-bf772af4f392
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 76824e17-5c62-47e4-a876-9e74c239fb2c
+                        Position: {X: -0.9591918, Y: -4.1306725, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 1c7a6467-64ff-4e39-9f2a-aa446f8a507a
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 59dd0570-83ba-4ef5-b737-4cf8e88ca12b
+                Name: Defense
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 607c45d0-ebae-4f76-9929-ba67d1acc57d
+                        Position: {X: 4.744597, Y: -1.8231359, Z: -9.391199}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: cd5b1d28-98d9-4a2f-b6bc-67e39d2e71e3
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
+                Id: 688beb6b-8ea3-4fe7-bcb9-266c4a369f7b
+                Name: Base
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
+                        Position: {X: 2.3250628, Y: -3.069079, Z: -9.405307}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.9135455, W: 0.4067366}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: abe78b4e-82b8-451c-91d6-d2bda80b28b5
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 10
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 6af70b06-5c5e-41db-9767-38eb5940e84d
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: b8cb8742-7c5a-42e2-8ef8-8418131d9e38
+                        Position: {X: 2.4727275, Y: -1.7354734, Z: -9.391218}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 3f774c8d-4cd2-4423-934e-01697d4aaecc
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 6f755474-b27d-42ac-9df1-bd4a0e89d9c6
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: b0f24b59-0133-47f8-859e-015ae7569ea5
+                        Position: {X: 8.446288, Y: -4.1444745, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.024756419, W: 0.9996935}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: c7331480-9b16-45b3-87ea-72e7a7f2dd5e
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 11
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 71a23eb6-a4a3-4657-8dd6-ea0a54b6048e
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: b0c96c4e-8522-4b3a-9aa4-4c086ce90e51
+                        Position: {X: 5.8926663, Y: -1.7446135, Z: -9.391222}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 4e0342ac-4162-48ee-ac74-bba819cbbf18
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 7a764b91-9eac-4952-8c25-7aabdd12ffdd
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: ae8fc996-4c87-4465-b98b-a2d615dcef99
+                        Position: {X: 6.767969, Y: -4.139115, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.024756419, W: 0.9996935}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: a15e47e8-c418-4187-a071-cd48f05dfa85
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 11
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
+                Id: 7cf8d868-bbf9-4aaa-acbb-8da29820c3a1
+                Name: SimpleEnemy
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                        Position: {X: 4.2072372, Y: 5.0, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.66891026, W: 0.7433432}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children:
+                            249acd3428186c907b5850348e612f31: ref!! 5e0db090-7795-4a78-a036-c1483dd88296
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 099db4c5-b14f-4e68-9d34-3789d57c570c
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 6
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    6785943006baab2c5c018a14be4bf5d8: !Ubaldis.EnemyController,Ubaldis
+                        Id: a9647e11-cd0f-4730-a0b9-c006c1ce1754
+                        speed: 0.5
+                        target: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
+                        projectile: null
+                        particleSystem: ref!! 26186c15-d1f2-465a-ba12-bc30d53b39cd
+                        stoppingDistance: 0.0
+        -   Folder: Tanks
+            Entity:
+                Id: 801f4264-0af9-41f5-8f29-7fefc6d7e643
+                Name: Tank
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: c388e8cb-e285-4daf-902c-2ef7977f2b11
+                        Position: {X: -0.22261143, Y: -3.066597, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.89601487, W: 0.44402406}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 1a036b68-ad0f-4f68-9144-7507aa7f1a70
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 9
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 849f15e1-40b3-480d-9230-011e2171c308
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: e7e4261a-6e15-43b5-96bf-732c55abddda
+                        Position: {X: -4.2468553, Y: -1.7172772, Z: -9.391209}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: a72a070b-b847-4793-b261-860b8056662c
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: 8610e94b-9287-4700-8141-db163069df32
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 269d3165-beb0-4aac-8673-c8d01b65f5e9
+                        Position: {X: 1.3570383, Y: -1.7526947, Z: -9.391211}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 10d75d82-d345-489c-8ebe-ba35eeae3dc2
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 86fd7ed3-7de9-4631-9201-7b5ce2684570
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 8561ad44-e76c-461c-9835-f100b0f5c52f
+                        Position: {X: 4.2072372, Y: -3.2534125, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.024756419, W: 0.9996935}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 5a39cfcf-1b8f-44f3-8644-c455e605b249
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 11
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: null
+            Entity:
+                Id: 9afd721c-88ca-486d-bd0a-6ddc88f6768a
+                Name: Background
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: e83b27e2-be5a-4920-b837-9145146c0894
+                        Position: {X: 3.3740792, Y: 0.13456899, Z: -27.377672}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: e2bf622a-8a0f-4d3e-b309-2408fabe2654
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 15
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: a22ecb59-25ab-46b1-8980-eb6d3b5d6b08
+                Name: Defense
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: e0ab9d80-55ea-4083-850f-b65256f7bb8a
+                        Position: {X: 10.395335, Y: -1.8128788, Z: -9.391213}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: f84a7f26-d416-4939-85d1-953d9e9f1461
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Tanks
+            Entity:
+                Id: a84a7548-680a-4620-9178-794720e54420
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 40806029-495b-4ff1-b434-e92ba9a18531
+                        Position: {X: 0.7173352, Y: -4.0529513, Z: -9.871024}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 0b68c6b0-b940-4074-9661-5236ae8e2e3f
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
+                Id: aaed6441-0a0c-40b1-a034-b1bb1b1d8a88
+                Name: Muzzle Flash
+                Components:
+                    deaf1457ba59b64eb63142c10b9c36b9: !TransformComponent
+                        Id: 5e0db090-7795-4a78-a036-c1483dd88296
+                        Position*: {X: 0.3686205, Y: -0.12328273, Z: 0.0}
+                        Rotation*: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    70923e79a93be746a2869fa79b781871: !ParticleSystemComponent
+                        Id: 26186c15-d1f2-465a-ba12-bc30d53b39cd
+                        Control:
+                            ResetSeconds: 5.0
+                            Control*: Pause
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Speed: 1.0
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: null
+                            Emitters:
+                                bdbf4692944fa34b93ac2c0b4cdaa06e:
+                                    EmitterName: Fire01
+                                    ParticleLifetime: {X: 0.08, Y: 0.08}
+                                    SortingPolicy: ByDepth
+                                    ShapeBuilder: !ShapeBuilderOrientedQuad
+                                        SamplerPosition: null
+                                        SamplerSize: !ComputeCurveSamplerFloat
+                                            Curve: !ComputeAnimationCurveFloat
+                                                KeyFrames:
+                                                    3fb40769a2c5d84c8fb0edff54cbde11:
+                                                        Key: 0.0
+                                                        Value: 1.0
+                                                        TangentType: Linear
+                                                    656dedb32f540b4eb9b629fef2d4d9b8:
+                                                        Key: 1.0
+                                                        Value: 2.0
+                                                        TangentType: Linear
+                                        ScaleLength: true
+                                        LengthFactor: 1.3
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 1.0
+                                        ComputeColor: !ComputeBinaryColor
+                                            Operator: Multiply
+                                            LeftChild: !ComputeFloat4
+                                                Value: {X: 50.0, Y: 50.0, Z: 50.0, W: 1.0}
+                                            RightChild: !ComputeBinaryColor
+                                                Operator: Multiply
+                                                LeftChild: !ComputeTextureColor
+                                                    Texture: 078e5195-2425-43e2-bceb-5b4f9770e8cf:Textures/MuzzleFlash
+                                                    FallbackValue:
+                                                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                    Scale: {X: 1.0, Y: 1.0}
+                                                    Offset: {X: 0.0, Y: 0.0}
+                                                    Swizzle: null
+                                                RightChild: !ComputeVertexStreamColor
+                                                    Stream: !ColorVertexStreamDefinition {}
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        7a950fef1afb7047aa538aadb79e6891: !SpawnerBurst
+                                            LoopCondition: Looping
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 1
+                                    Initializers:
+                                        4fbcfc89c8d0a748947f57b3b59a1035: !InitialPositionSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            PositionMin: {X: 0.0, Y: 0.4, Z: 0.0}
+                                            PositionMax: {X: 0.0, Y: 0.4, Z: 0.0}
+                                            Interpolate: false
+                                        ed042b61eea8264b8fc3665ca26b539f: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: 0.0, Y: 0.8, Z: 0.0}
+                                            VelocityMax: {X: 0.0, Y: 0.8, Z: 0.0}
+                                        791ead271bed7a4ca1078a956c6782cb: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 0.5
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 1.0, Y: 1.0}
+                                    Updaters:
+                                        d78f984c59b2d442bee5d592a099196c: !UpdaterSpeedToDirection
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                        d9ac87f27a3e2442957d69355b2f037c: !UpdaterColorOverTime
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            SamplerMain: !ComputeCurveSamplerColor4
+                                                Curve: !ComputeAnimationCurveColor4
+                                                    KeyFrames:
+                                                        5685808a440d074398006e47fcd9ea4d:
+                                                            Key: 0.0
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                            TangentType: Linear
+                                                        e6917016e7d70849a3bdcdadb129181e:
+                                                            Key: 0.5
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.1}
+                                                            TangentType: Linear
+                                            SamplerOptional: null
+                                            SeedOffset: 0
+                                a1e76b90974d714aa991ec6a16af22a6:
+                                    EmitterName: Fire02
+                                    ParticleLifetime: {X: 0.1, Y: 0.1}
+                                    DrawPriority: 5
+                                    SortingPolicy: ByDepth
+                                    ShapeBuilder: !ShapeBuilderBillboard
+                                        SamplerPosition: null
+                                        SamplerSize: !ComputeCurveSamplerFloat
+                                            Curve: !ComputeAnimationCurveFloat
+                                                KeyFrames:
+                                                    572b84240f0acd4c976160c15d1b79d8:
+                                                        Key: 0.0
+                                                        Value: 0.0
+                                                        TangentType: Linear
+                                                    9d0d99b19c8bff4f9593c04b42514900:
+                                                        Key: 0.5
+                                                        Value: 2.0
+                                                        TangentType: Linear
+                                                    9eb5ab0949f67647a755fbe64fc880f4:
+                                                        Key: 1.0
+                                                        Value: 0.0
+                                                        TangentType: Linear
+                                        SamplerRotation: null
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 1.0
+                                        ComputeColor: !ComputeBinaryColor
+                                            Operator: Multiply
+                                            LeftChild: !ComputeFloat4
+                                                Value: {X: 10.0, Y: 10.0, Z: 10.0, W: 1.0}
+                                            RightChild: !ComputeBinaryColor
+                                                Operator: Multiply
+                                                LeftChild: !ComputeTextureColor
+                                                    Texture: e1f01f3a-44fa-4288-917a-d24692beb01f:Textures/Muzzleflash02
+                                                    FallbackValue:
+                                                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                    Scale: {X: 1.0, Y: 1.0}
+                                                    Offset: {X: 0.0, Y: 0.0}
+                                                    Swizzle: null
+                                                RightChild: !ComputeVertexStreamColor
+                                                    Stream: !ColorVertexStreamDefinition {}
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        790d7d7371b24e4ea0fd8854a254b9bb: !SpawnerBurst
+                                            LoopCondition: Looping
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 10
+                                    Initializers:
+                                        240663e569da164899e641ff0e28f475: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: 0.0, Y: 3.0, Z: 0.0}
+                                            VelocityMax: {X: 0.0, Y: 4.0, Z: 0.0}
+                                        b1bf3cb0d41f91468afbb55b5f7184d8: !InitialPositionSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            PositionMin: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            PositionMax: {X: 0.0, Y: 0.2, Z: 0.0}
+                                            Interpolate: false
+                                        f959f629b26c06429f49d3db77f16038: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 0.5
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 1.0, Y: 1.0}
+                                    Updaters:
+                                        150385996adb85449c8d21ff415dcb61: !UpdaterColorOverTime
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            SamplerMain: !ComputeCurveSamplerColor4
+                                                Curve: !ComputeAnimationCurveColor4
+                                                    KeyFrames:
+                                                        14b719f14cb80b4e87fa847d19b11f55:
+                                                            Key: 0.0
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.5}
+                                                            TangentType: Linear
+                                                        895e803c27276543841b3060281b2288:
+                                                            Key: 0.5
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.1}
+                                                            TangentType: Linear
+                                            SamplerOptional: null
+                                            SeedOffset: 0
+            Base:
+                BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
+                BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
+                InstanceId: 066b609b-2985-4677-ae4a-267a39faf30c
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: aaf9ee64-b461-4556-9983-32711e99ba8f
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 5c2432d5-75a8-48a9-8fdc-e4d92466cdfa
+                        Position: {X: -2.0177999, Y: -1.743016, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 74333f1d-69ac-4e0c-bb27-c31b9612e19e
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Tanks
+            Entity:
+                Id: af34d88a-4386-46ae-adbc-f9985dfd2e60
+                Name: Tank
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: f65f4daa-0f65-452b-b286-704d95ea9496
+                        Position: {X: 0.698009, Y: -3.9044652, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.89601487, W: 0.44402406}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 14810fb0-640d-4ccb-9b48-bd571957d8c3
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 9
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: b9904292-d822-4186-b600-a3c7bdf9033d
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 642f7a53-203a-480f-a1aa-27230637a5d8
+                        Position: {X: 7.0077744, Y: -1.742438, Z: -9.391226}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 5a1ab04f-159b-49e7-be82-ad99af71f3eb
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: ccd59e26-3b27-4480-ba13-8aed70680f89
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: c1817e21-e0ea-4e55-a781-07d6c046574d
+                        Position: {X: -5.3619623, Y: -1.7194531, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 599ccfae-1be5-40d4-a9b1-c155ff76587b
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: cd4bd3eb-bd49-447a-a23a-18b660ea7084
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 6694faae-b133-4f5a-8c2a-96174ffe2559
+                        Position: {X: 9.236831, Y: -1.7681766, Z: -9.391222}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 53c45779-080d-43af-b065-9b598e98c4b0
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: DefensePlatforms
+            Entity:
+                Id: e88c31a3-57ef-421e-bc4b-fccea047fbfa
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 811808fa-5be5-497c-9d37-624189d82ba7
+                        Position: {X: -3.1311665, Y: -1.7000556, Z: -9.391215}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 331eac3d-a5ed-4e74-910c-480ba8c8344a
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Tanks
+            Entity:
+                Id: f5f46a5c-e715-4894-a102-8487fde08541
+                Name: Tank
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 6c817a51-e734-46c4-8fed-9f0ef30e6910
+                        Position: {X: -1.0242753, Y: -4.0027337, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.89601487, W: 0.44402406}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: fb29be80-b9b6-41c0-8c8e-0e4153725484
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 9
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: null
+            Entity:
+                Id: f77113ff-e116-4a70-b792-497333c622f4
+                Name: Background
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 2459d69b-6dd9-463e-aa67-527bca0a1d64
+                        Position: {X: 3.2568667, Y: 1.0647418, Z: -28.970373}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: bb2799f4-8adc-489a-9d9a-34729c5cf356
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: f7d96101-d808-4a32-9b3c-65f04473ae59
+                Name: Platform
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 4f338cc7-2ddb-404e-b26b-1ed77ede2ca9
+                        Position: {X: 5.0539875, Y: -4.103548, Z: -9.384153}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.024756419, W: 0.9996935}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.25}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 7f72345f-fab0-4ed3-9bbc-0435d868cc9d
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 11
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
