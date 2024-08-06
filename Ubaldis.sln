@@ -1,0 +1,13 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ubaldis.Windows", "Ubaldis.Windows\Ubaldis.Windows.csproj", "{B41B9349-8C07-44E0-837B-D8027C338360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ubaldis", "Ubaldis\Ubaldis.csproj", "{7BBAD421-C54F-4DAF-A893-64B1D5ECF71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ubaldis.Linux", "Ubaldis.Linux\Ubaldis.Linux.csproj", "{40027EF1-B2DB-4D1E-BC8A-544ED8284100}"
+EndProject
+Global
+EndGlobal
