@@ -32,7 +32,7 @@ Hierarchy:
         - ref!! 3a45e602-6bb7-4ad5-a543-c64f94af6134
         - ref!! 7a764b91-9eac-4952-8c25-7aabdd12ffdd
         - ref!! 10cb6ae9-5a61-4e89-bd99-eef30fbd5273
-        - ref!! 40b33881-f524-4c23-b1bf-1c28e4d2e7e4
+        - ref!! 6d067925-67f5-4081-a6fc-de59f77d20d2
         - ref!! 6f755474-b27d-42ac-9df1-bd4a0e89d9c6
         - ref!! 57e2d4e6-29db-4475-a70c-bf772af4f392
         - ref!! 4b05a3ea-6438-4379-8388-3d6b3fb80439
@@ -41,7 +41,6 @@ Hierarchy:
         - ref!! af34d88a-4386-46ae-adbc-f9985dfd2e60
         - ref!! f5f46a5c-e715-4894-a102-8487fde08541
         - ref!! 688beb6b-8ea3-4fe7-bcb9-266c4a369f7b
-        - ref!! afa67506-e3c8-402f-a285-5c41ac6bda07
     Parts:
         -   Folder: Snipers
             Entity:
@@ -157,15 +156,14 @@ Hierarchy:
                             CurrentFrame: 11
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: Snipers
-            Entity:
+        -   Entity:
                 Id: 40b33881-f524-4c23-b1bf-1c28e4d2e7e4
-                Name: Platform
+                Name: Sniper
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: fece1400-1ff9-4691-9c90-3d51f15bbb55
-                        Position: {X: 7.568387, Y: -2.8999183, Z: -9.384153}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.1738918, W: 0.98476475}
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -4.5856682E-10, Y: 8.097468E-11, Z: 0.1738918, W: 0.98476475}
                         Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
@@ -182,7 +180,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: a06a2fdb-0152-4c1a-bdee-a5f1535a4d66
-                        Position: {X: -0.17089081, Y: -3.242446, Z: -9.384153}
+                        Position: {X: -0.17089081, Y: -2.8697937, Z: -9.384153}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.25}
                         Children: {}
@@ -193,149 +191,6 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Entity:
-                Id: 52529d53-a6e9-495f-9e25-317637f3b046
-                Name: Bullettrail
-                Components:
-                    f64803bed11dc146a051377a1f0dd811: !TransformComponent
-                        Id: 27379108-de81-4419-91df-879e2247fd02
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    b2e8f21fd1cd9f42a98b5df3285b58c1: !ParticleSystemComponent
-                        Id: 3504d827-02dc-4914-92ae-02160a15fa9c
-                        Control:
-                            ResetSeconds: 3.0
-                            Control: Play
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Speed: 1.0
-                        ParticleSystem:
-                            Settings: {}
-                            BoundingShape: null
-                            Emitters:
-                                a69514f7e76a3947a388fab4b17b40e3:
-                                    EmitterName: trail
-                                    MaxParticlesOverride: 50
-                                    ParticleLifetime: {X: 1.0, Y: 1.0}
-                                    SortingPolicy: ByOrder
-                                    ShapeBuilder: !ShapeBuilderRibbon
-                                        SmoothingPolicy: Best
-                                        Segments: 15
-                                        TextureCoordinatePolicy: Stretched
-                                        TexCoordsFactor: 1.0
-                                        UVRotate:
-                                            FlipX: false
-                                            FlipY: false
-                                            UVClockwise: Degree0
-                                    Material: !ParticleMaterialComputeColor
-                                        AlphaAdditive: 0.5
-                                        ComputeColor: !ComputeBinaryColor
-                                            Operator: Multiply
-                                            LeftChild: !ComputeFloat4
-                                                Value: {X: 5.0, Y: 5.0, Z: 5.0, W: 1.0}
-                                            RightChild: !ComputeBinaryColor
-                                                Operator: Multiply
-                                                LeftChild: !ComputeTextureColor
-                                                    Texture: 2c8e60e4-e070-4124-a1fa-f36cc74de76c:Textures/Bullettrail01
-                                                    FallbackValue:
-                                                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                                                    Scale: {X: 1.0, Y: 1.0}
-                                                    Offset: {X: 0.0, Y: 0.0}
-                                                    Swizzle: null
-                                                RightChild: !ComputeVertexStreamColor
-                                                    Stream: !ColorVertexStreamDefinition {}
-                                        UVBuilder: null
-                                        ForceTexCoords: false
-                                    Spawners:
-                                        49a593b25a626a4a9ae6abd1e6d80a01: !SpawnerPerSecond
-                                            LoopCondition: Looping
-                                            Delay: {X: 0.0, Y: 0.0}
-                                            Duration: {X: 1.0, Y: 1.0}
-                                            SpawnCount: 50.0
-                                    Initializers:
-                                        77e504c4ae8c8b40b3e86fc2f2159927: !InitialVelocitySeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: true
-                                            VelocityMin: {X: -0.1, Y: 0.4, Z: -0.1}
-                                            VelocityMax: {X: 0.1, Y: 0.4, Z: 0.1}
-                                        b81a1444d030c3418f4268a112f3495e: !InitialSpawnOrder
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: false
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: false
-                                    Updaters:
-                                        f5dcc863ffffb248a240f9a87c4986d4: !UpdaterSizeOverTime
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: false
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: false
-                                            SamplerMain: !ComputeCurveSamplerFloat
-                                                Curve: !ComputeAnimationCurveFloat
-                                                    KeyFrames:
-                                                        a1df6c8fa767cc4c9256ed22cb99047e:
-                                                            Key: 0.0
-                                                            Value: 0.1
-                                                            TangentType: Linear
-                                                        069b80707306b341902968bc4a16cff9:
-                                                            Key: 0.9
-                                                            Value: 0.0
-                                                            TangentType: Linear
-                                            SamplerOptional: null
-                                            SeedOffset: 0
-                                        4b4b8636d557404f89e237f792878df3: !UpdaterColorOverTime
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: false
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: false
-                                            SamplerMain: !ComputeCurveSamplerColor4
-                                                Curve: !ComputeAnimationCurveColor4
-                                                    KeyFrames:
-                                                        5ba51e26ba02014281f963a86f91993d:
-                                                            Key: 0.0
-                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.5}
-                                                            TangentType: Linear
-                                                        772e3919fe5c9b41aa10618cb4e9abbc:
-                                                            Key: 1.0
-                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.0}
-                                                            TangentType: Linear
-                                            SamplerOptional: null
-                                            SeedOffset: 0
-            Base:
-                BasePartAsset: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
-                BasePartId: 46fbefaf-3826-4e5a-a2af-5439860b2f35
-                InstanceId: d0ffa432-658e-489c-b7d3-cb2c1c767940
         -   Folder: DefensePlatforms
             Entity:
                 Id: 53298033-adb3-4f8c-bebd-38baed661224
@@ -378,7 +233,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 76824e17-5c62-47e4-a876-9e74c239fb2c
-                        Position: {X: -0.9591918, Y: -4.1306725, Z: -9.384153}
+                        Position: {X: -0.9591918, Y: -3.7580202, Z: -9.384153}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.25}
                         Children: {}
@@ -444,6 +299,24 @@ Hierarchy:
                         BlendMode: AlphaBlend
         -   Folder: Snipers
             Entity:
+                Id: 6d067925-67f5-4081-a6fc-de59f77d20d2
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: 0bc9a3b7-e110-4ee9-a15e-3d2fb7ff08a3
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 2.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: 0f651e0f-4880-4f79-a6e4-4f0d22e2c41d
+                        Position: {X: 7.5861487, Y: -3.2491882, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! fece1400-1ff9-4691-9c90-3d51f15bbb55
+        -   Folder: Snipers
+            Entity:
                 Id: 6f755474-b27d-42ac-9df1-bd4a0e89d9c6
                 Name: Platform
                 Components:
@@ -503,7 +376,7 @@ Hierarchy:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         Position: {X: 4.2072372, Y: 5.0, Z: -9.384153}
-                        Rotation: {X: 0.0, Y: 0.0, Z: -0.66891026, W: 0.7433432}
+                        Rotation: {X: 0.0, Y: 0.0, Z: -0.6339656, W: 0.7733612}
                         Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children:
                             249acd3428186c907b5850348e612f31: ref!! 5e0db090-7795-4a78-a036-c1483dd88296
@@ -528,7 +401,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: c388e8cb-e285-4daf-902c-2ef7977f2b11
-                        Position: {X: -0.22261143, Y: -3.066597, Z: -9.384153}
+                        Position: {X: -0.22261143, Y: -2.6939447, Z: -9.384153}
                         Rotation: {X: 0.0, Y: 0.0, Z: -0.89601487, W: 0.44402406}
                         Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children: {}
@@ -636,7 +509,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 40806029-495b-4ff1-b434-e92ba9a18531
-                        Position: {X: 0.7173352, Y: -4.0529513, Z: -9.871024}
+                        Position: {X: 0.7173352, Y: -3.680299, Z: -9.871024}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.25}
                         Children: {}
@@ -945,7 +818,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: f65f4daa-0f65-452b-b286-704d95ea9496
-                        Position: {X: 0.698009, Y: -3.9044652, Z: -9.384153}
+                        Position: {X: 0.698009, Y: -3.531813, Z: -9.384153}
                         Rotation: {X: 0.0, Y: 0.0, Z: -0.89601487, W: 0.44402406}
                         Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children: {}
@@ -956,25 +829,6 @@ Hierarchy:
                             CurrentFrame: 9
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Entity:
-                Id: afa67506-e3c8-402f-a285-5c41ac6bda07
-                Name: BulletController
-                Components:
-                    1bd8a2ec6b00adc81575c62985538b37: !TransformComponent
-                        Id: f04c69a8-05e0-4bb3-a18c-1eae78b93c81
-                        Position: {X: 4.179355, Y: 4.7317314, Z: -9.387161}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            221e5f85334bea8fe3d03c95e59fc079: ref!! 27379108-de81-4419-91df-879e2247fd02
-                    5f0d6477c94bfaed723330c7b7041e55: !Ubaldis.BulletController,Ubaldis
-                        Id: 2926505f-a34e-4001-90c8-909a17fe1964
-                        direction: false
-                        speed: 10.0
-            Base:
-                BasePartAsset: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
-                BasePartId: b25248d7-50d7-4d83-bbaa-efc7a8bd4519
-                InstanceId: d0ffa432-658e-489c-b7d3-cb2c1c767940
         -   Folder: DefensePlatforms
             Entity:
                 Id: b7d13558-16c2-434d-a762-a88bf10014a4
@@ -1117,7 +971,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 6c817a51-e734-46c4-8fed-9f0ef30e6910
-                        Position: {X: -1.0242753, Y: -4.0027337, Z: -9.384153}
+                        Position: {X: -1.0242753, Y: -3.6300814, Z: -9.384153}
                         Rotation: {X: 0.0, Y: 0.0, Z: -0.89601487, W: 0.44402406}
                         Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children: {}

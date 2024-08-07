@@ -163,4 +163,4 @@ Hierarchy:
                     5f0d6477c94bfaed723330c7b7041e55: !Ubaldis.BulletController,Ubaldis
                         Id: 237cc03e-4566-47d0-95a1-80bd194ed052
                         direction: false
-                        speed: 10.0
+                        speed: 25.0

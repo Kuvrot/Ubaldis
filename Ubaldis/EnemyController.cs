@@ -25,7 +25,7 @@ namespace Ubaldis
         {
              particleSystem.ParticleSystem.Stop();
         }
-    
+
         public override void Update()
         {
             stoppingDistance = Vector3.Distance(target.Position , Entity.Transform.Position);
