@@ -163,7 +163,7 @@ Hierarchy:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: fece1400-1ff9-4691-9c90-3d51f15bbb55
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: -4.5856682E-10, Y: 8.097468E-11, Z: 0.1738918, W: 0.98476475}
+                        Rotation: {X: -2.8209393E-10, Y: 3.704908E-10, Z: -0.6122173, W: 0.7906896}
                         Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent

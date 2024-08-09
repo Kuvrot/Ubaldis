@@ -1,13 +1,37 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 16
-VisualStudioVersion = 16.0.0.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 16.0.0.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ubaldis.Windows", "Ubaldis.Windows\Ubaldis.Windows.csproj", "{B41B9349-8C07-44E0-837B-D8027C338360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ubaldis.Windows", "Ubaldis.Windows\Ubaldis.Windows.csproj", "{B41B9349-8C07-44E0-837B-D8027C338360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ubaldis", "Ubaldis\Ubaldis.csproj", "{7BBAD421-C54F-4DAF-A893-64B1D5ECF71C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ubaldis", "Ubaldis\Ubaldis.csproj", "{7BBAD421-C54F-4DAF-A893-64B1D5ECF71C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ubaldis.Linux", "Ubaldis.Linux\Ubaldis.Linux.csproj", "{40027EF1-B2DB-4D1E-BC8A-544ED8284100}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ubaldis.Linux", "Ubaldis.Linux\Ubaldis.Linux.csproj", "{40027EF1-B2DB-4D1E-BC8A-544ED8284100}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B41B9349-8C07-44E0-837B-D8027C338360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41B9349-8C07-44E0-837B-D8027C338360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41B9349-8C07-44E0-837B-D8027C338360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41B9349-8C07-44E0-837B-D8027C338360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBAD421-C54F-4DAF-A893-64B1D5ECF71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBAD421-C54F-4DAF-A893-64B1D5ECF71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBAD421-C54F-4DAF-A893-64B1D5ECF71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBAD421-C54F-4DAF-A893-64B1D5ECF71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40027EF1-B2DB-4D1E-BC8A-544ED8284100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40027EF1-B2DB-4D1E-BC8A-544ED8284100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40027EF1-B2DB-4D1E-BC8A-544ED8284100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40027EF1-B2DB-4D1E-BC8A-544ED8284100}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9D8F88D-0D9C-4077-A6ED-50BBE23C6236}
+	EndGlobalSection
 EndGlobal

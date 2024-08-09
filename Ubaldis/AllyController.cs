@@ -39,7 +39,7 @@ namespace Ubaldis
             float angle = MathF.Atan2(direction.Y, direction.X);
 
             // Create a rotation quaternion for the Z-axis only
-            Quaternion rotation = Quaternion.RotationZ(angle + 180);
+            Quaternion rotation = Quaternion.RotationZ(angle);
 
             // Set the entity's rotation to the calculated rotation
             Entity.Transform.Rotation = rotation;
