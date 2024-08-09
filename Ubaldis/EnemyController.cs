@@ -13,14 +13,20 @@ namespace Ubaldis
 {
     public class EnemyController : SyncScript
     {
-       public float speed = 0.5f;
+        //Stats
+        public float health = 100;
+        public float speed = 0.5f;
+        public float fireRate= 2f;
+        public float damage = 30;
+
         public TransformComponent target;
         public Prefab projectile;
         public ParticleSystemComponent particleSystem;
-        public float stoppingDistance;
+        public float stoppingDistance = 6;
 
-        float timer = 2f;
-        float clock = 2f;
+        
+        private float _clock = 2f;
+        private float _distance = 0f;
         public override void Start()
         {
              particleSystem.ParticleSystem.Stop();
@@ -28,11 +34,11 @@ namespace Ubaldis
 
         public override void Update()
         {
-            stoppingDistance = Vector3.Distance(target.Position , Entity.Transform.Position);
+            _distance = Vector3.Distance(target.Position , Entity.Transform.Position);
                 
-            if (stoppingDistance <= 4)
+            if (_distance <= stoppingDistance)
             {
-                if (clock <= 0)
+                if (_clock <= 0)
                 {
                     particleSystem.ParticleSystem.Play(); //Muzzle flash plays
 
@@ -50,18 +56,18 @@ namespace Ubaldis
                         Entity.Scene.Entities.Add(entity);
                     }
 
-                    particleSystem.ParticleSystem.ResetSimulation(); //Muzzle flash plays
+                    particleSystem.ParticleSystem.ResetSimulation(); //Muzzle flash resets
 
-                    clock = timer;
+                    _clock = fireRate;
                 }
                 else
                 {
-                    clock -= 1 * (float)Game.UpdateTime.Elapsed.TotalSeconds;
+                    _clock -= 1 * GameManager.deltaTime;
                 }
             }
             else
             {
-                Entity.Transform.Position.Y -= speed * (float)Game.UpdateTime.Elapsed.TotalSeconds;
+                Entity.Transform.Position.Y -= speed * GameManager.deltaTime;
             }
         }
     }

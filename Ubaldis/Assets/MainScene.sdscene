@@ -32,8 +32,14 @@ Hierarchy:
         - ref!! 3a45e602-6bb7-4ad5-a543-c64f94af6134
         - ref!! 7a764b91-9eac-4952-8c25-7aabdd12ffdd
         - ref!! 10cb6ae9-5a61-4e89-bd99-eef30fbd5273
-        - ref!! 6d067925-67f5-4081-a6fc-de59f77d20d2
         - ref!! 6f755474-b27d-42ac-9df1-bd4a0e89d9c6
+        - ref!! 6d067925-67f5-4081-a6fc-de59f77d20d2
+        - ref!! 8ccd18b2-95d4-4e14-88af-3e3bc42af76c
+        - ref!! 29ae6a12-de61-47f8-86f6-dabd8e1ca476
+        - ref!! 2a2aa9ac-c8db-436e-b04e-d0438bc035bb
+        - ref!! 98f54217-a05a-444e-a626-1e842b1014e9
+        - ref!! 3363ad98-aab2-431b-ba2d-ca43ed0ceb28
+        - ref!! 487c77f2-a882-42de-abe7-789eb35166ee
         - ref!! 57e2d4e6-29db-4475-a70c-bf772af4f392
         - ref!! 4b05a3ea-6438-4379-8388-3d6b3fb80439
         - ref!! a84a7548-680a-4620-9178-794720e54420
@@ -41,6 +47,7 @@ Hierarchy:
         - ref!! af34d88a-4386-46ae-adbc-f9985dfd2e60
         - ref!! f5f46a5c-e715-4894-a102-8487fde08541
         - ref!! 688beb6b-8ea3-4fe7-bcb9-266c4a369f7b
+        - ref!! 67cfd3e3-b0a1-42fd-b201-b6cd2ded3595
     Parts:
         -   Folder: Snipers
             Entity:
@@ -55,6 +62,7 @@ Hierarchy:
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
                         Id: 30ec2d39-ee0d-4680-92be-e2c226dc0748
+                        Enabled: false
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 11
@@ -78,6 +86,44 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 29ae6a12-de61-47f8-86f6-dabd8e1ca476
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: c149f4ba-2075-4a8f-8684-f5fe17dbd0f5
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 2.0
+                        damage: 50.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: f90cf728-455b-446a-94b2-c35529d1309c
+                        Position: {X: 4.532848, Y: -2.646489, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! a8c62e9f-90fe-41cc-92de-2e2ca8e47f27
+        -   Folder: Snipers
+            Entity:
+                Id: 2a2aa9ac-c8db-436e-b04e-d0438bc035bb
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: 90340131-e41b-455f-a85f-046299af59c9
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 2.0
+                        damage: 50.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: 302ba0ae-dd5b-4689-9430-7666bf5bb328
+                        Position: {X: 5.3880396, Y: -3.4743142, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! b065942f-5a32-471a-88fb-67d21a365a7e
         -   Entity:
                 Id: 2afa4f78-effd-4257-aa8b-04d41b6dc1a7
                 Name: Camera
@@ -120,6 +166,25 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 3363ad98-aab2-431b-ba2d-ca43ed0ceb28
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: 90fa142a-0b8e-42ea-9ac4-5288d74e7542
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 2.0
+                        damage: 50.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: f3aab158-b494-41f5-8f08-bba93df79dc2
+                        Position: {X: 8.801298, Y: -3.5184069, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! 76167154-d5d0-4fcc-a45f-eea76f0243dc
         -   Folder: DefensePlatforms
             Entity:
                 Id: 39d22fc0-7087-403e-8330-25aa00c5a585
@@ -151,6 +216,7 @@ Hierarchy:
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
                         Id: 7364d7d3-ed5b-43de-9411-5fcf2d3cebe5
+                        Enabled: false
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 11
@@ -173,6 +239,25 @@ Hierarchy:
                             CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 487c77f2-a882-42de-abe7-789eb35166ee
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: 86039055-85fb-4639-9fde-530197a6e227
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 2.0
+                        damage: 50.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: fab05e50-ae46-4122-999e-b51aa63e47b5
+                        Position: {X: 8.801298, Y: -3.5184069, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! 28fdf03f-c341-48f9-9a27-0c2da346fd8c
         -   Folder: Tanks
             Entity:
                 Id: 4b05a3ea-6438-4379-8388-3d6b3fb80439
@@ -226,6 +311,23 @@ Hierarchy:
                             CurrentFrame: 14
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: 55b7212c-4be0-4e72-9ffc-a56ec3280c1d
+                Name: Sniper
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 76167154-d5d0-4fcc-a45f-eea76f0243dc
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -2.8209393E-10, Y: 3.704908E-10, Z: -0.6122173, W: 0.7906896}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 5827f441-83df-48ed-a56b-23105c69d041
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 8
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
         -   Folder: Tanks
             Entity:
                 Id: 57e2d4e6-29db-4475-a70c-bf772af4f392
@@ -262,6 +364,18 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: 67cfd3e3-b0a1-42fd-b201-b6cd2ded3595
+                Name: GameManager
+                Components:
+                    211f0a87bf99c5b371f1c7b4787bc586: !TransformComponent
+                        Id: 6ec0bbbd-4747-45d4-a59d-753e4f3456da
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8e180cb29f1e08d9bb1383941de0b9e1: !Ubaldis.GameManager,Ubaldis
+                        Id: 190885f8-1a0d-4848-a1a1-3282cc982651
         -   Entity:
                 Id: 688beb6b-8ea3-4fe7-bcb9-266c4a369f7b
                 Name: Base
@@ -307,10 +421,11 @@ Hierarchy:
                         allyType: 0
                         health: 100.0
                         fireRate: 2.0
+                        damage: 50.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                     78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
                         Id: 0f651e0f-4880-4f79-a6e4-4f0d22e2c41d
-                        Position: {X: 7.5861487, Y: -3.2491882, Z: -9.266797}
+                        Position: {X: 7.5861487, Y: -2.60544, Z: -9.266797}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -328,6 +443,7 @@ Hierarchy:
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
                         Id: c7331480-9b16-45b3-87ea-72e7a7f2dd5e
+                        Enabled: false
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 11
@@ -364,6 +480,7 @@ Hierarchy:
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
                         Id: a15e47e8-c418-4187-a071-cd48f05dfa85
+                        Enabled: false
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 11
@@ -389,11 +506,14 @@ Hierarchy:
                         BlendMode: AlphaBlend
                     6785943006baab2c5c018a14be4bf5d8: !Ubaldis.EnemyController,Ubaldis
                         Id: a9647e11-cd0f-4730-a0b9-c006c1ce1754
+                        health: 100.0
                         speed: 0.5
+                        fireRate: 2.0
+                        damage: 30.0
                         target: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         particleSystem: ref!! 26186c15-d1f2-465a-ba12-bc30d53b39cd
-                        stoppingDistance: 0.0
+                        stoppingDistance: 6.0
         -   Folder: Tanks
             Entity:
                 Id: 801f4264-0af9-41f5-8f29-7fefc6d7e643
@@ -461,11 +581,67 @@ Hierarchy:
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
                         Id: 5a39cfcf-1b8f-44f3-8644-c455e605b249
+                        Enabled: false
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 11
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: 8c9929c0-5245-46e0-b7ab-9237c1e37971
+                Name: Sniper
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: c0672f18-f7cb-4a35-9c20-69c6d0116ddc
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -2.8209393E-10, Y: 3.704908E-10, Z: -0.6122173, W: 0.7906896}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 33d6a676-3e9d-41c1-82d0-787e90770352
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 8
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Folder: Snipers
+            Entity:
+                Id: 8ccd18b2-95d4-4e14-88af-3e3bc42af76c
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: d6b6a6c8-922a-4ee1-8717-2ec337c95c0b
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 2.0
+                        damage: 50.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: 8228709d-90c9-452f-af6f-337a8c5ace68
+                        Position: {X: 6.2705984, Y: -2.646489, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! c0672f18-f7cb-4a35-9c20-69c6d0116ddc
+        -   Folder: Snipers
+            Entity:
+                Id: 98f54217-a05a-444e-a626-1e842b1014e9
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: c6b5fe82-9eea-484c-abdb-ee6f79280f54
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 2.0
+                        damage: 50.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: 1dfbd7d3-f044-4c44-aa87-9caa1460acb3
+                        Position: {X: 7.125789, Y: -3.5184069, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! 88259762-117a-47f6-8afa-488bbd3d4a7a
         -   Folder: null
             Entity:
                 Id: 9afd721c-88ca-486d-bd0a-6ddc88f6768a
@@ -500,6 +676,23 @@ Hierarchy:
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
+                Id: a6538f11-35d8-4bd6-8b4a-8f7f97243fc7
+                Name: Sniper
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 88259762-117a-47f6-8afa-488bbd3d4a7a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -2.8209393E-10, Y: 3.704908E-10, Z: -0.6122173, W: 0.7906896}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 639cc7c9-65d3-47de-a409-1c34e3443ab4
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
         -   Folder: Tanks
@@ -829,6 +1022,23 @@ Hierarchy:
                             CurrentFrame: 9
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: b193c449-38be-4581-b1bc-ce478b48c74c
+                Name: Sniper
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 28fdf03f-c341-48f9-9a27-0c2da346fd8c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -2.8209393E-10, Y: 3.704908E-10, Z: -0.6122173, W: 0.7906896}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 27382605-9ad1-4349-a5fc-8037df2c2db3
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 8
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
         -   Folder: DefensePlatforms
             Entity:
                 Id: b7d13558-16c2-434d-a762-a88bf10014a4
@@ -946,6 +1156,40 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: d6032a67-3749-4d9d-8b91-0630173f220f
+                Name: Sniper
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: b065942f-5a32-471a-88fb-67d21a365a7e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -2.8209393E-10, Y: 3.704908E-10, Z: -0.6122173, W: 0.7906896}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: e0b48e78-1b23-43a1-ac58-a4666d2ea4e1
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 8
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
+                Id: e55adca3-a5fc-4550-b234-f6db410033bc
+                Name: Sniper
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: a8c62e9f-90fe-41cc-92de-2e2ca8e47f27
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -2.8209393E-10, Y: 3.704908E-10, Z: -0.6122173, W: 0.7906896}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: e6fecb6c-07d1-472a-8290-256d3936d1e2
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 8
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
         -   Folder: DefensePlatforms
             Entity:
                 Id: e88c31a3-57ef-421e-bc4b-fccea047fbfa
@@ -1012,6 +1256,7 @@ Hierarchy:
                         Children: {}
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
                         Id: 7f72345f-fab0-4ed3-9bbc-0435d868cc9d
+                        Enabled: false
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 11

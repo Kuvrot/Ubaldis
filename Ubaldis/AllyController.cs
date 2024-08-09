@@ -14,13 +14,14 @@ namespace Ubaldis
         public int allyType = 0;
         public float health = 100;
         public float fireRate = 2;
+        public float damage = 50;
         public EntityComponent target;
 
-        private float clock = 0;
+        private float _clock = 0;
 
         public override void Start()
         {
-            clock = fireRate;
+            _clock = fireRate;
         }
 
         public override void Update()
