@@ -22,7 +22,6 @@ namespace Ubaldis
         public float lifeTime = 0.5f;
         public TransformComponent target;
 
-
         private float _clock;
 
         public override void Start()

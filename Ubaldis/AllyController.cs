@@ -74,12 +74,13 @@ namespace Ubaldis
                 {
                     entity.Transform.Position = Entity.Transform.Position;
                     entity.Transform.Position.Z -= 10;
+
+                    //If the BulletController script has a target assigned it will move towards that target
                     entity.Get<BulletController>().target = target.Entity.Transform;
                 }
 
                 Entity.Scene.Entities.Add(entity);
             }
-
             muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
         }
     }
