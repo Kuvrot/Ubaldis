@@ -18,19 +18,38 @@ namespace Ubaldis
 {
     public class BulletController : SyncScript
     {
-        public bool direction = false; //false for negative, true for positive
-        public float speed = 50; 
-        
+        public float speed = 50;
+        public float lifeTime = 0.5f;
+        public TransformComponent target;
+
+
+        private float _clock;
+
+        public override void Start()
+        {
+            _clock = lifeTime;
+        }
+
         public override void Update()
         {
-            if (direction)
+            if (target != null)
             {
-                Entity.Transform.Position.Y += speed * (float)Game.UpdateTime.Elapsed.TotalSeconds;
+                Vector3 direction = (target.Position - Entity.Transform.Position);
+                direction.Normalize();
+                Entity.Transform.Position += direction;
             }
             else
             {
-                Entity.Transform.Position.Y -= speed * (float)Game.UpdateTime.Elapsed.TotalSeconds;
+                Entity.Transform.Position.Y -= speed * GameManager.deltaTime;
             }
+
+            if (_clock <= 0)
+            {
+                Entity.Scene.Entities.Remove(Entity);
+                Entity.Dispose();
+            }
+
+            _clock -= 1 * GameManager.deltaTime;
         }
     }
 }

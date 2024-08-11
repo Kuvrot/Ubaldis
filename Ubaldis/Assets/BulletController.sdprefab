@@ -162,5 +162,6 @@ Hierarchy:
                             221e5f85334bea8fe3d03c95e59fc079: ref!! b51539f1-fd82-4dbc-8d39-8cbb68ff7a32
                     5f0d6477c94bfaed723330c7b7041e55: !Ubaldis.BulletController,Ubaldis
                         Id: 237cc03e-4566-47d0-95a1-80bd194ed052
-                        direction: false
                         speed: 25.0
+                        lifeTime: 0.25
+                        target: null

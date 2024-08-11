@@ -7,7 +7,6 @@ using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
 using Stride.Particles.Components;
-using System.Windows.Media.Animation;
 
 namespace Ubaldis
 {
@@ -75,6 +74,7 @@ namespace Ubaldis
                 {
                     entity.Transform.Position = Entity.Transform.Position;
                     entity.Transform.Position.Z -= 10;
+                    entity.Get<BulletController>().target = target.Entity.Transform;
                 }
 
                 Entity.Scene.Entities.Add(entity);
