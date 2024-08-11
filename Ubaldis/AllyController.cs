@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
+using Stride.Particles.Components;
+using System.Windows.Media.Animation;
 
 namespace Ubaldis
 {
@@ -16,6 +18,8 @@ namespace Ubaldis
         public float fireRate = 2;
         public float damage = 50;
         public EntityComponent target;
+        public Prefab projectile;
+        public ParticleSystemComponent muzzleFlash;
 
         private float _clock = 0;
 
@@ -25,6 +29,18 @@ namespace Ubaldis
         }
 
         public override void Update()
+        {
+            LookTarget();
+
+            if (_clock <= 0)
+            {
+                Shoot();
+                _clock = fireRate;
+            }
+            _clock -= 1 * GameManager.deltaTime;
+        }
+
+        public void LookTarget()
         {
             // Get the positions of the current entity and the target
             var currentPosition = Entity.Transform.Position;
@@ -44,6 +60,27 @@ namespace Ubaldis
 
             // Set the entity's rotation to the calculated rotation
             Entity.Transform.Rotation = rotation;
+        }
+
+        public void Shoot ()
+        {
+            muzzleFlash.ParticleSystem.Play(); //Muzzle flash plays
+
+            //Projectile instance
+            var p = projectile.Instantiate();
+
+            foreach (var entity in p)
+            {
+                if (entity.Transform != null)
+                {
+                    entity.Transform.Position = Entity.Transform.Position;
+                    entity.Transform.Position.Z -= 10;
+                }
+
+                Entity.Scene.Entities.Add(entity);
+            }
+
+            muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
         }
     }
 }

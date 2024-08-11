@@ -21,7 +21,7 @@ namespace Ubaldis
 
         public TransformComponent target;
         public Prefab projectile;
-        public ParticleSystemComponent particleSystem;
+        public ParticleSystemComponent muzzleFlash;
         public float stoppingDistance = 6;
 
         
@@ -29,7 +29,7 @@ namespace Ubaldis
         private float _distance = 0f;
         public override void Start()
         {
-             particleSystem.ParticleSystem.Stop();
+             muzzleFlash.ParticleSystem.Stop();
         }
 
         public override void Update()
@@ -40,24 +40,7 @@ namespace Ubaldis
             {
                 if (_clock <= 0)
                 {
-                    particleSystem.ParticleSystem.Play(); //Muzzle flash plays
-
-                    //Projectile instance
-                    var p = projectile.Instantiate();
-
-                    foreach (var entity in p)
-                    {
-                        if (entity.Transform != null)
-                        {
-                            entity.Transform.Position = Entity.Transform.Position;
-                            entity.Transform.Position.Z -= 10;
-                        }
-
-                        Entity.Scene.Entities.Add(entity);
-                    }
-
-                    particleSystem.ParticleSystem.ResetSimulation(); //Muzzle flash resets
-
+                    Shoot();
                     _clock = fireRate;
                 }
                 else
@@ -69,6 +52,27 @@ namespace Ubaldis
             {
                 Entity.Transform.Position.Y -= speed * GameManager.deltaTime;
             }
+        }
+
+        public void Shoot ()
+        {
+            muzzleFlash.ParticleSystem.Play(); //Muzzle flash plays
+
+            //Projectile instance
+            var p = projectile.Instantiate();
+
+            foreach (var entity in p)
+            {
+                if (entity.Transform != null)
+                {
+                    entity.Transform.Position = Entity.Transform.Position;
+                    entity.Transform.Position.Z -= 10;
+                }
+
+                Entity.Scene.Entities.Add(entity);
+            }
+
+            muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
         }
     }
 }
