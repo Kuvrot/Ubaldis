@@ -17,14 +17,14 @@ namespace Ubaldis
         public EntityComponent _wall;
 
         public static UIPage UI;
-        public UIPage _UI;
+        public UIComponent _UI;
 
         public static int health = 3000;
 
         public override void Start()
         {
             wall = _wall;
-            UI = _UI;
+            UI = _UI.Page;
         }
 
         public override void Update()

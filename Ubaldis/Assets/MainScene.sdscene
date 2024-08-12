@@ -483,11 +483,11 @@ Hierarchy:
                         health: 100.0
                         speed: 0.5
                         fireRate: 2.0
-                        damage: 30.0
+                        damage: 30
                         target: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 4182838a-d79d-42e3-9219-3f0db38c166a
-                        stoppingDistance: 6.0
+                        stoppingDistance: 5.0
         -   Entity:
                 Id: 2d592258-bcb0-4985-b259-2da910b24ca0
                 Name: Platform
@@ -904,6 +904,7 @@ Hierarchy:
                     8e180cb29f1e08d9bb1383941de0b9e1: !Ubaldis.GameManager,Ubaldis
                         Id: 190885f8-1a0d-4848-a1a1-3282cc982651
                         _wall: !TransformComponent ref!! 9934e049-f90d-467d-913b-061f02132590
+                        _UI: ref!! 2e0c53bf-ca5f-491b-8f15-5fbbb066e29c
         -   Entity:
                 Id: 684b5ea2-916f-4a55-ace9-124ff04e8246
                 Name: Platform
@@ -1402,11 +1403,11 @@ Hierarchy:
                         health: 100.0
                         speed: 0.5
                         fireRate: 2.0
-                        damage: 30.0
+                        damage: 30
                         target: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 26186c15-d1f2-465a-ba12-bc30d53b39cd
-                        stoppingDistance: 6.0
+                        stoppingDistance: 5.0
         -   Entity:
                 Id: 7cffb3e7-5955-4810-93cf-7a31cc4e25c3
                 Name: Defense
@@ -2863,11 +2864,11 @@ Hierarchy:
                         health: 100.0
                         speed: 0.5
                         fireRate: 2.0
-                        damage: 30.0
+                        damage: 30
                         target: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! c1c04757-c9c8-43f3-9bd9-3791ea83aa17
-                        stoppingDistance: 6.0
+                        stoppingDistance: 5.0
         -   Entity:
                 Id: ccd59e26-3b27-4480-ba13-8aed70680f89
                 Name: Platform
