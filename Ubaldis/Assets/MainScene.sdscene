@@ -13,38 +13,6 @@ Hierarchy:
         - ref!! 548bcffe-f897-469c-b5d2-fad6b9be05cc
         - ref!! 9afd721c-88ca-486d-bd0a-6ddc88f6768a
         - ref!! f77113ff-e116-4a70-b792-497333c622f4
-        - ref!! ccd59e26-3b27-4480-ba13-8aed70680f89
-        - ref!! 18a48994-0726-4760-9010-2af4cafbc500
-        - ref!! b7d13558-16c2-434d-a762-a88bf10014a4
-        - ref!! 684b5ea2-916f-4a55-ace9-124ff04e8246
-        - ref!! 27bd80bf-dfec-4da5-8103-a479b5d1ca24
-        - ref!! b091bee0-92ba-45f2-a542-f374415371e8
-        - ref!! 71a23eb6-a4a3-4657-8dd6-ea0a54b6048e
-        - ref!! 1d99ef78-f1b9-4092-a77b-1209dda9a3ea
-        - ref!! 849f15e1-40b3-480d-9230-011e2171c308
-        - ref!! 282ce965-df82-4c2f-a7cc-8716050c271d
-        - ref!! 8610e94b-9287-4700-8141-db163069df32
-        - ref!! 3ff443ad-69bd-4142-a3b4-8f0d54e2e937
-        - ref!! b9904292-d822-4186-b600-a3c7bdf9033d
-        - ref!! 52ebc557-53ac-4a6e-aeb7-f8bdb399a511
-        - ref!! e88c31a3-57ef-421e-bc4b-fccea047fbfa
-        - ref!! 3f407cb7-92a5-43d1-964d-f6dd99c67a80
-        - ref!! 6af70b06-5c5e-41db-9767-38eb5940e84d
-        - ref!! c3d7ae4b-9bf1-4fbf-b36c-63dab68bf7d0
-        - ref!! 2d592258-bcb0-4985-b259-2da910b24ca0
-        - ref!! 421419c7-e4c5-4a79-a1c1-93aa56d68761
-        - ref!! aaf9ee64-b461-4556-9983-32711e99ba8f
-        - ref!! b8d38479-4260-460f-95c8-11a7cf7a868e
-        - ref!! 39d22fc0-7087-403e-8330-25aa00c5a585
-        - ref!! 6a86a48a-99b8-4e47-a68f-e3e96fdc978d
-        - ref!! cd4bd3eb-bd49-447a-a23a-18b660ea7084
-        - ref!! 6db67d9c-884d-4325-81a4-f0f71dfb8f50
-        - ref!! 53298033-adb3-4f8c-bebd-38baed661224
-        - ref!! 17d9b39f-03d5-4052-829d-9dc8954f018f
-        - ref!! 59dd0570-83ba-4ef5-b737-4cf8e88ca12b
-        - ref!! 7cffb3e7-5955-4810-93cf-7a31cc4e25c3
-        - ref!! a22ecb59-25ab-46b1-8980-eb6d3b5d6b08
-        - ref!! 4ab221ec-c3b6-4168-8d46-d6f4db850fc0
         - ref!! 86fd7ed3-7de9-4631-9201-7b5ce2684570
         - ref!! f7d96101-d808-4a32-9b3c-65f04473ae59
         - ref!! 3a45e602-6bb7-4ad5-a543-c64f94af6134
@@ -65,6 +33,8 @@ Hierarchy:
         - ref!! f5f46a5c-e715-4894-a102-8487fde08541
         - ref!! 688beb6b-8ea3-4fe7-bcb9-266c4a369f7b
         - ref!! 67cfd3e3-b0a1-42fd-b201-b6cd2ded3595
+        - ref!! 5ea6f0de-f437-418b-ad66-cb92539d71b7
+        - ref!! 5df2aac5-3c84-473d-a408-469541533c40
     Parts:
         -   Entity:
                 Id: 09c4cdb1-81ad-4cb2-85d8-68b837baa51a
@@ -358,8 +328,7 @@ Hierarchy:
                             CurrentFrame: 11
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 17d9b39f-03d5-4052-829d-9dc8954f018f
                 Name: Defense
                 Components:
@@ -376,8 +345,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 18a48994-0726-4760-9010-2af4cafbc500
                 Name: Platform
                 Components:
@@ -416,8 +384,7 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 1d99ef78-f1b9-4092-a77b-1209dda9a3ea
                 Name: Platform
                 Components:
@@ -434,8 +401,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 27bd80bf-dfec-4da5-8103-a479b5d1ca24
                 Name: Platform
                 Components:
@@ -452,8 +418,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 282ce965-df82-4c2f-a7cc-8716050c271d
                 Name: Platform
                 Components:
@@ -523,8 +488,7 @@ Hierarchy:
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 4182838a-d79d-42e3-9219-3f0db38c166a
                         stoppingDistance: 6.0
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 2d592258-bcb0-4985-b259-2da910b24ca0
                 Name: Platform
                 Components:
@@ -541,14 +505,13 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 39d22fc0-7087-403e-8330-25aa00c5a585
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 08e3fbdf-010a-4021-af28-b392b55ddb8a
-                        Position: {X: 3.586093, Y: -1.7784337, Z: -9.391209}
+                        Position: {X: 3.633043, Y: -1.7784337, Z: -9.391209}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -595,8 +558,7 @@ Hierarchy:
                             CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 3f407cb7-92a5-43d1-964d-f6dd99c67a80
                 Name: Platform
                 Components:
@@ -613,8 +575,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 3ff443ad-69bd-4142-a3b4-8f0d54e2e937
                 Name: Platform
                 Components:
@@ -648,8 +609,7 @@ Hierarchy:
                             CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 421419c7-e4c5-4a79-a1c1-93aa56d68761
                 Name: Platform
                 Components:
@@ -666,8 +626,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 4ab221ec-c3b6-4168-8d46-d6f4db850fc0
                 Name: Defense
                 Components:
@@ -702,8 +661,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 52ebc557-53ac-4a6e-aeb7-f8bdb399a511
                 Name: Platform
                 Components:
@@ -720,8 +678,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 53298033-adb3-4f8c-bebd-38baed661224
                 Name: Defense
                 Components:
@@ -817,8 +774,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 59dd0570-83ba-4ef5-b737-4cf8e88ca12b
                 Name: Defense
                 Components:
@@ -835,6 +791,67 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Entity:
+                Id: 5df2aac5-3c84-473d-a408-469541533c40
+                Name: UI
+                Components:
+                    0f5a32534d02575fd8c97fda9ea567b3: !TransformComponent
+                        Id: fea6d806-ff74-45a9-a2d5-08c1540c6627
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ab37f06344e07107cc3865d5ecb8a2ce: !UIComponent
+                        Id: 2e0c53bf-ca5f-491b-8f15-5fbbb066e29c
+                        Page: 06c5a428-2cc1-4f65-8c43-a08965943268:UI/GameUI
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+        -   Entity:
+                Id: 5ea6f0de-f437-418b-ad66-cb92539d71b7
+                Name: Wall
+                Components:
+                    cb9ee38ba069ca81959041ae0c3f93f5: !TransformComponent
+                        Id: 9934e049-f90d-467d-913b-061f02132590
+                        Position: {X: 0.0, Y: 0.24392988, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1bc0e76feb21a78f1f94ae6c7a38305d: ref!! c1817e21-e0ea-4e55-a781-07d6c046574d
+                            060d7d7a5833f6a5203c43eebb7fc92f: ref!! 86f13551-9e7e-45a8-8bfc-dde2e4897e37
+                            0b3f396f5923494bd2a0b821f22f71fb: ref!! 34a562e4-ce3d-43de-8fa7-23ee8413c054
+                            e98a5f2fe4da858c375d2c754f3ec73a: ref!! 1e4c74fe-6901-4574-9cc0-ca06316b81d0
+                            f8afc4e5b6e16984d6887162432e7b93: ref!! ff1e8247-18c4-4990-b4e0-672149ce4805
+                            18b34b1eaba62bd3fc4df7a239bc9973: ref!! 99f0a825-4a0b-426f-9cf9-538b8cd0e37a
+                            10f404f23bad97bcb200f51cbd4055e3: ref!! b0c96c4e-8522-4b3a-9aa4-4c086ce90e51
+                            815dbf65a24f1cef96946418bd416183: ref!! 083785cf-90fc-431c-9b78-b24259e1b507
+                            e11350780ca8de3cb9c3a0b83fc46fc1: ref!! e7e4261a-6e15-43b5-96bf-732c55abddda
+                            19598d140e45e38fd92e4cee3a81e04b: ref!! 6085229f-700f-45cf-8868-b62492719f48
+                            ded5bc542f9185a706f4e4329f48475a: ref!! 269d3165-beb0-4aac-8673-c8d01b65f5e9
+                            d7373a2069d4f2e6db6c6ffd5ddee736: ref!! 1ca4ed96-9c05-423f-91e7-22b762622016
+                            b250c9c3a87539d55c79513801d9a770: ref!! 642f7a53-203a-480f-a1aa-27230637a5d8
+                            423cfaf413cd202de70107a25616e29d: ref!! d8b423ae-98d3-4650-b476-92a04d0da418
+                            f7859a8d5c54187c3b361697128330a7: ref!! 811808fa-5be5-497c-9d37-624189d82ba7
+                            95930e6e8f7792550de59398a0d4c533: ref!! 29bd2892-f67d-413a-8d84-2ef2d8aca28d
+                            a0fc08c2bc7667f0700c0c6f10fac189: ref!! b8cb8742-7c5a-42e2-8ef8-8418131d9e38
+                            82bf40a80a16261ea94a368e71927792: ref!! 8c0e6402-ed9c-4f7e-9b9b-5732880c1ec4
+                            60753ca7aac722e4dfaa1388a430bc16: ref!! 16fe5809-0898-4366-bb95-5a3150b2cb52
+                            8b3cece5dd116b9dce7f8325217dfbf5: ref!! c98e7055-7ddb-404e-a489-46705fe9955d
+                            650ad0c10f63bc63067f37b4247c883a: ref!! 5c2432d5-75a8-48a9-8fdc-e4d92466cdfa
+                            3d948c45b233dbb7fa5fb14bad70101b: ref!! 2ee5a193-9bf2-4a5f-bb72-a09cf5d3b373
+                            11c8d1e32cadf2a5d9a68e84c9fbe7d9: ref!! 08e3fbdf-010a-4021-af28-b392b55ddb8a
+                            389484caf1db807715ad551ed0980b13: ref!! 8f76eb3c-cd1e-484a-9492-a60a27f5b374
+                            1777bf6ac7cc59d40c36a7ee9acc2a8f: ref!! 6694faae-b133-4f5a-8c2a-96174ffe2559
+                            a68b32e2a0737f3a2be33bf1d0546e95: ref!! aa141cc5-01a1-4804-bffa-8508d2f83322
+                            c95b48ee744a190ec6ae71e25cb28d7b: ref!! c7f4d3fa-c5e4-407f-a787-65c1d287f2f7
+                            0fd32b1533f26463cafbc725fbc35787: ref!! 0a0466f0-c38b-4fcd-a3dd-eac6cfd2361f
+                            f1c447353c150b54645ec8ac19db253d: ref!! 607c45d0-ebae-4f76-9929-ba67d1acc57d
+                            05cb000a4c6496f8712bb509a61576fd: ref!! 31f46bde-4c3b-47fe-a425-1d81a4d8e040
+                            b34211c13c3712f074ac28302c4ad83c: ref!! e0ab9d80-55ea-4083-850f-b65256f7bb8a
+                            4252b6a57c0cdee92ab0a721f155dcfb: ref!! d309d5e3-3323-484d-8a66-3d3fb241e7f8
+                    17c80eb0dd90d46d21b6a2ad3f46ea36: !Ubaldis.WallController,Ubaldis
+                        Id: 3c09bf78-f4b7-4cf1-ad85-fa8f46a29395
+                        sprites: null
+                        hit: false
         -   Entity:
                 Id: 649b5516-211a-486f-a1d0-7bcb9227b441
                 Name: Sniper
@@ -886,8 +903,8 @@ Hierarchy:
                         Children: {}
                     8e180cb29f1e08d9bb1383941de0b9e1: !Ubaldis.GameManager,Ubaldis
                         Id: 190885f8-1a0d-4848-a1a1-3282cc982651
-        -   Folder: DefensePlatforms
-            Entity:
+                        _wall: !TransformComponent ref!! 9934e049-f90d-467d-913b-061f02132590
+        -   Entity:
                 Id: 684b5ea2-916f-4a55-ace9-124ff04e8246
                 Name: Platform
                 Components:
@@ -961,8 +978,7 @@ Hierarchy:
                             CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 6a86a48a-99b8-4e47-a68f-e3e96fdc978d
                 Name: Platform
                 Components:
@@ -979,8 +995,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 6af70b06-5c5e-41db-9767-38eb5940e84d
                 Name: Platform
                 Components:
@@ -1019,8 +1034,7 @@ Hierarchy:
                         Children:
                             e0667b76ebf271e1a78b91a7c13d19dc: ref!! 8f27acae-eff4-4afc-95bb-b3278819312d
                             0ad89b3c326d384fd8184b6ff68ed4f4: ref!! fece1400-1ff9-4691-9c90-3d51f15bbb55
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 6db67d9c-884d-4325-81a4-f0f71dfb8f50
                 Name: Platform
                 Components:
@@ -1329,8 +1343,7 @@ Hierarchy:
                             CurrentFrame: 11
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 71a23eb6-a4a3-4657-8dd6-ea0a54b6048e
                 Name: Platform
                 Components:
@@ -1394,8 +1407,7 @@ Hierarchy:
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 26186c15-d1f2-465a-ba12-bc30d53b39cd
                         stoppingDistance: 6.0
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 7cffb3e7-5955-4810-93cf-7a31cc4e25c3
                 Name: Defense
                 Components:
@@ -1430,8 +1442,7 @@ Hierarchy:
                             CurrentFrame: 9
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 849f15e1-40b3-480d-9230-011e2171c308
                 Name: Platform
                 Components:
@@ -1448,8 +1459,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: 8610e94b-9287-4700-8141-db163069df32
                 Name: Platform
                 Components:
@@ -2066,8 +2076,7 @@ Hierarchy:
                 BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
                 BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
                 InstanceId: 4c4cefc8-c028-49ef-bffd-60dc0b6d49a2
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: a22ecb59-25ab-46b1-8980-eb6d3b5d6b08
                 Name: Defense
                 Components:
@@ -2648,8 +2657,7 @@ Hierarchy:
                 BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
                 BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
                 InstanceId: 066b609b-2985-4677-ae4a-267a39faf30c
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: aaf9ee64-b461-4556-9983-32711e99ba8f
                 Name: Platform
                 Components:
@@ -2706,8 +2714,7 @@ Hierarchy:
                             CurrentFrame: 9
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: b091bee0-92ba-45f2-a542-f374415371e8
                 Name: Platform
                 Components:
@@ -2741,8 +2748,7 @@ Hierarchy:
                             CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: b7d13558-16c2-434d-a762-a88bf10014a4
                 Name: Platform
                 Components:
@@ -2782,8 +2788,7 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: b8d38479-4260-460f-95c8-11a7cf7a868e
                 Name: Platform
                 Components:
@@ -2800,8 +2805,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: b9904292-d822-4186-b600-a3c7bdf9033d
                 Name: Platform
                 Components:
@@ -2818,8 +2822,7 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: c3d7ae4b-9bf1-4fbf-b36c-63dab68bf7d0
                 Name: Platform
                 Components:
@@ -2865,8 +2868,7 @@ Hierarchy:
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! c1c04757-c9c8-43f3-9bd9-3791ea83aa17
                         stoppingDistance: 6.0
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: ccd59e26-3b27-4480-ba13-8aed70680f89
                 Name: Platform
                 Components:
@@ -2905,8 +2907,7 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: cd4bd3eb-bd49-447a-a23a-18b660ea7084
                 Name: Platform
                 Components:
@@ -2945,8 +2946,7 @@ Hierarchy:
                         Children:
                             e0667b76ebf271e1a78b91a7c13d19dc: ref!! 81e8c340-a652-4b86-b4ee-45e804b42d95
                             0ad89b3c326d384fd8184b6ff68ed4f4: ref!! 4794a8bb-392b-48ad-95b4-e4d5f1cb74bb
-        -   Folder: DefensePlatforms
-            Entity:
+        -   Entity:
                 Id: e88c31a3-57ef-421e-bc4b-fccea047fbfa
                 Name: Platform
                 Components:

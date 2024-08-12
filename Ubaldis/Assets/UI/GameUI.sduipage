@@ -1,0 +1,57 @@
+!UIPageAsset
+Id: 06c5a428-2cc1-4f65-8c43-a08965943268
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! 0578fe54-2676-4d37-847b-76b60fd8e59b
+    Parts:
+        -   UIElement: !Grid
+                Id: 0578fe54-2676-4d37-847b-76b60fd8e59b
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    8ca71d8150ee76ff5c1623c76195a8b5: !Slider ref!! 0c270d24-9988-4bfa-9bc6-6cc5432d422f
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !Slider
+                Id: 0c270d24-9988-4bfa-9bc6-6cc5432d422f
+                DependencyProperties: {}
+                BackgroundColor: {R: 155, G: 255, B: 157, A: 255}
+                DrawLayerNumber: 5
+                Width: 964.0
+                Height: 18.0
+                HorizontalAlignment: Stretch
+                VerticalAlignment: Bottom
+                Margin: {Left: 158.0, Right: 158.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Health
+                Value: 2000.0
+                Maximum: 3000.0
+                Step: 1.0
+                TrackBackgroundImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 9
+                TrackForegroundImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 12
+                TrackStartingOffsets: {X: 3.0, Y: 3.0}
+                ThumbImage: !SpriteFromSheet
+                    Sheet: null
+                    CurrentFrame: 7
+                MouseOverThumbImage: !SpriteFromSheet
+                    Sheet: null
+                    CurrentFrame: 6
+                TickImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 8
+                TickOffset: 13.0

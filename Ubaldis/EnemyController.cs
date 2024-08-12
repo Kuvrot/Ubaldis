@@ -17,7 +17,7 @@ namespace Ubaldis
         public float health = 100;
         public float speed = 0.5f;
         public float fireRate= 2f;
-        public float damage = 30;
+        public int damage = 30;
 
         public TransformComponent target;
         public Prefab projectile;
@@ -71,6 +71,8 @@ namespace Ubaldis
 
                 Entity.Scene.Entities.Add(entity);
             }
+
+            GameManager.wall.Entity.Get<WallController>().GetHit(damage);
 
             muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
         }
