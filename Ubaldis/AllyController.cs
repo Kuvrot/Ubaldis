@@ -7,6 +7,7 @@ using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
 using Stride.Particles.Components;
+using System.Diagnostics.Eventing.Reader;
 
 namespace Ubaldis
 {
@@ -81,6 +82,9 @@ namespace Ubaldis
 
                 Entity.Scene.Entities.Add(entity);
             }
+
+            target.Entity.Get<EnemyController>().GetDamage(damage);
+
             muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
         }
     }

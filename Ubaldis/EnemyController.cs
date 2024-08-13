@@ -54,7 +54,7 @@ namespace Ubaldis
             }
         }
 
-        public void Shoot ()
+        private void Shoot ()
         {
             muzzleFlash.ParticleSystem.Play(); //Muzzle flash plays
 
@@ -75,6 +75,11 @@ namespace Ubaldis
             GameManager.wall.Entity.Get<WallController>().GetHit(damage);
 
             muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
+        }
+
+        public void GetDamage (float amount)
+        {
+            health -= amount;
         }
     }
 }
