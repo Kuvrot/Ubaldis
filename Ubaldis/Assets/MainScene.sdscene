@@ -488,6 +488,7 @@ Hierarchy:
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 4182838a-d79d-42e3-9219-3f0db38c166a
                         stoppingDistance: 5.0
+                        deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
         -   Entity:
                 Id: 2d592258-bcb0-4985-b259-2da910b24ca0
                 Name: Platform
@@ -1408,6 +1409,7 @@ Hierarchy:
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 26186c15-d1f2-465a-ba12-bc30d53b39cd
                         stoppingDistance: 5.0
+                        deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
         -   Entity:
                 Id: 7cffb3e7-5955-4810-93cf-7a31cc4e25c3
                 Name: Defense
@@ -2869,6 +2871,7 @@ Hierarchy:
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! c1c04757-c9c8-43f3-9bd9-3791ea83aa17
                         stoppingDistance: 5.0
+                        deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
         -   Entity:
                 Id: ccd59e26-3b27-4480-ba13-8aed70680f89
                 Name: Platform

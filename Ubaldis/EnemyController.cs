@@ -24,7 +24,9 @@ namespace Ubaldis
         public ParticleSystemComponent muzzleFlash;
         public float stoppingDistance = 6;
 
-        
+
+        public Prefab deathVFX;
+
         private float _clock = 2f;
         private float _distance = 0f;
         public override void Start()
@@ -52,6 +54,12 @@ namespace Ubaldis
             {
                 Entity.Transform.Position.Y -= speed * GameManager.deltaTime;
             }
+
+            if (health <= 0)
+            {
+                Death();
+            }
+
         }
 
         private void Shoot ()
@@ -75,6 +83,24 @@ namespace Ubaldis
             GameManager.wall.Entity.Get<WallController>().GetHit(damage);
 
             muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
+        }
+
+        private void Death ()
+        {
+            var vfx = deathVFX.Instantiate();
+
+            foreach (var entity in vfx)
+            {
+                if (entity.Transform != null)
+                {
+                    entity.Transform.Position = Entity.Transform.Position;
+                }
+
+                Entity.Scene.Entities.Add(entity);
+            }
+
+            Entity.Scene.Entities.Remove(Entity);
+            Entity.Dispose();
         }
 
         public void GetDamage (float amount)
