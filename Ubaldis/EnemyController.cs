@@ -102,7 +102,6 @@ namespace Ubaldis
             Entity.Scene.Entities.Remove(Entity);
             Entity.Dispose();
         }
-
         public void GetDamage (float amount)
         {
             health -= amount;
