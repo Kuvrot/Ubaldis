@@ -19,6 +19,9 @@ namespace Ubaldis
         public static UIPage UI;
         public UIComponent _UI;
 
+        public Prefab[] enemies;
+        public TransformComponent[] spawnPositions;
+
         public static int health = 3000;
 
         public override void Start()
@@ -33,6 +36,9 @@ namespace Ubaldis
 
             var h = UI.RootElement.FindName("Health") as Slider;
             h.Value = health;
+
+            var ht = UI.RootElement.FindName("healthText") as TextBlock;
+            ht.Text = "3000/" + health.ToString();
         }
     }
 }

@@ -18,6 +18,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Children:
                     8ca71d8150ee76ff5c1623c76195a8b5: !Slider ref!! 0c270d24-9988-4bfa-9bc6-6cc5432d422f
+                    4d575311a54b5948675ed2337c03f05c: !TextBlock ref!! b04d39fe-3900-4b08-8902-4a3b1a113299
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
@@ -35,7 +36,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: Health
-                Value: 2000.0
+                Value: 1.0
                 Maximum: 3000.0
                 Step: 1.0
                 TrackBackgroundImage: !SpriteFromSheet
@@ -55,3 +56,20 @@ Hierarchy:
                     Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
                     CurrentFrame: 8
                 TickOffset: 13.0
+        -   UIElement: !TextBlock
+                Id: b04d39fe-3900-4b08-8902-4a3b1a113299
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 396.0
+                Height: 39.0
+                VerticalAlignment: Bottom
+                Margin: {Left: 449.0, Right: 435.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: healthText
+                Text: 3000/3000
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
