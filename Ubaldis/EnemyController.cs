@@ -29,6 +29,9 @@ namespace Ubaldis
 
         private float _clock = 2f;
         private float _distance = 0f;
+
+        public bool dead = false;
+
         public override void Start()
         {
             GameManager.EnemiesList.Add(Entity);
@@ -109,6 +112,7 @@ namespace Ubaldis
 
             Entity.Scene.Entities.Remove(Entity);
             Entity.Dispose();
+            dead = true;
         }
         public void GetDamage (float amount)
         {

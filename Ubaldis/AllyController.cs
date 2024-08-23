@@ -30,7 +30,7 @@ namespace Ubaldis
 
         public override void Update()
         {
-            if (target == null)
+            if (target == null || target.Entity.Get<EnemyController>().dead)
             {
                 FindTarget();
             }

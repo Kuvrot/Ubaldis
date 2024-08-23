@@ -29,12 +29,13 @@ Hierarchy:
                         health: 100.0
                         speed: 0.5
                         fireRate: 2.0
-                        damage: 30
+                        damage: 15
                         target: null
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 0307a9a6-a38d-4e34-9b6c-e7ccb0a225e8
                         stoppingDistance: 3.0
                         deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
+                        dead: false
         -   Entity:
                 Id: f9c7d818-ddc9-4687-9b31-6856b832fd9d
                 Name: Muzzle Flash

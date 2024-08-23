@@ -622,6 +622,7 @@ Hierarchy:
                         muzzleFlash: ref!! 4182838a-d79d-42e3-9219-3f0db38c166a
                         stoppingDistance: 5.0
                         deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
+                        dead: false
         -   Entity:
                 Id: 2d592258-bcb0-4985-b259-2da910b24ca0
                 Name: Platform
@@ -935,8 +936,8 @@ Hierarchy:
                         Id: 1e7ef2c2-1916-45f3-99a9-b4d4863d31bc
                         allyType: 0
                         health: 100.0
-                        fireRate: 2.0
-                        damage: 50.0
+                        fireRate: 0.25
+                        damage: 25.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 7a7a490c-3929-4233-b314-ac55b057d7a2
@@ -957,8 +958,8 @@ Hierarchy:
                         Id: fd5cbd13-ef31-4672-ad8f-5ba47a8702d1
                         allyType: 0
                         health: 100.0
-                        fireRate: 2.0
-                        damage: 50.0
+                        fireRate: 0.25
+                        damage: 25.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 053831d5-4730-4f34-aac3-3c6340239f7b
@@ -1132,8 +1133,8 @@ Hierarchy:
                         Id: 99610290-0c79-4a3c-ab9a-c017c30dd7a8
                         allyType: 0
                         health: 100.0
-                        fireRate: 2.0
-                        damage: 50.0
+                        fireRate: 0.25
+                        damage: 25.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 4f482fd0-951b-4249-bfd3-417376a050c6
@@ -1160,7 +1161,7 @@ Hierarchy:
                         _wall: !TransformComponent ref!! 9934e049-f90d-467d-913b-061f02132590
                         _enemyTarget: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
                         _UI: ref!! 2e0c53bf-ca5f-491b-8f15-5fbbb066e29c
-                        spawnRate: 1.0
+                        spawnRate: 0.5
                         Enemies:
                             43dd7698c98e2797a2b454f516972696: 2288a5f8-3979-40b7-8b91-e22e64eb3fab:SimpleEnemy
                         SpawnPositions:
@@ -1295,8 +1296,8 @@ Hierarchy:
                         Id: 0bc9a3b7-e110-4ee9-a15e-3d2fb7ff08a3
                         allyType: 0
                         health: 100.0
-                        fireRate: 2.0
-                        damage: 50.0
+                        fireRate: 0.25
+                        damage: 25.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 4cbc8e4d-4a73-4456-841c-70cb8f3ac811
@@ -1676,12 +1677,13 @@ Hierarchy:
                         health: 100.0
                         speed: 0.5
                         fireRate: 2.0
-                        damage: 30
+                        damage: 15
                         target: null
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! e691798a-a962-40fc-bb0e-a07e75dc1cc6
                         stoppingDistance: 3.0
                         deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
+                        dead: false
             Base:
                 BasePartAsset: 2288a5f8-3979-40b7-8b91-e22e64eb3fab:SimpleEnemy
                 BasePartId: 0eb8ecf6-8ccd-4ab3-bad5-983544fa61d7
@@ -3082,8 +3084,8 @@ Hierarchy:
                         Id: 51f2d8ff-16a7-4b73-98a1-28309eacbe2b
                         allyType: 0
                         health: 100.0
-                        fireRate: 2.0
-                        damage: 50.0
+                        fireRate: 0.25
+                        damage: 25.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! e0d9639e-4146-4d7b-bbfd-2d31c9dcd091
@@ -3388,6 +3390,7 @@ Hierarchy:
                         muzzleFlash: ref!! c1c04757-c9c8-43f3-9bd9-3791ea83aa17
                         stoppingDistance: 5.0
                         deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
+                        dead: false
         -   Entity:
                 Id: ccd59e26-3b27-4480-ba13-8aed70680f89
                 Name: Platform
@@ -3493,8 +3496,8 @@ Hierarchy:
                         Id: 9a7d0747-46d2-45bf-a8ed-4a3ab2512186
                         allyType: 0
                         health: 100.0
-                        fireRate: 2.0
-                        damage: 50.0
+                        fireRate: 0.25
+                        damage: 25.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 7fffc2ba-aeee-4992-af01-570e3633a220
