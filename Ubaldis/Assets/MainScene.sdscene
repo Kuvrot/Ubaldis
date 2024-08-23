@@ -35,6 +35,19 @@ Hierarchy:
         - ref!! 67cfd3e3-b0a1-42fd-b201-b6cd2ded3595
         - ref!! 5ea6f0de-f437-418b-ad66-cb92539d71b7
         - ref!! 5df2aac5-3c84-473d-a408-469541533c40
+        - ref!! 84da62a7-f93e-43ea-b75b-40f1e7b4b596
+        - ref!! c7badba3-3433-4abe-bc1c-51f7d11b0db8
+        - ref!! d4a84b59-ad02-44cf-a938-6806bb109115
+        - ref!! 0b80486a-b7ad-4f07-809f-9c62632975a3
+        - ref!! b59f0715-c929-4293-9838-3e5c65d723c3
+        - ref!! 4d0ed508-9899-47e1-bb13-d952663d2c2f
+        - ref!! 4236883e-2dc7-4566-908d-951adb29ee3d
+        - ref!! a6c87c6e-9424-495e-9280-848b15cd8119
+        - ref!! 1ec8aebf-1c80-4069-abb5-8ab4adfe0131
+        - ref!! 62e05c31-b464-47c0-b1ea-ba29e409d63c
+        - ref!! aee11409-0102-4b0b-be9d-91d0b866a459
+        - ref!! 1d38244c-bdaf-4ccd-b033-8dc193979190
+        - ref!! 98b1b5a4-6961-4f04-8e1c-d43f9497ee53
     Parts:
         -   Entity:
                 Id: 09c4cdb1-81ad-4cb2-85d8-68b837baa51a
@@ -309,6 +322,46 @@ Hierarchy:
                 BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
                 BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
                 InstanceId: 0f09a333-8b19-421e-b91c-f6b0e79a67b5
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 0b80486a-b7ad-4f07-809f-9c62632975a3
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 76d6aa0a-d3c2-4926-a34f-f7a5ccd77f3f
+                        Position: {X: -1.7099019, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 6edfeab1-1d8c-4cb7-a644-a1b952c375f2
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 386d0e0c-d3d5-4f28-a961-4cfb54af64cf
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: Snipers
             Entity:
                 Id: 10cb6ae9-5a61-4e89-bd99-eef30fbd5273
@@ -334,7 +387,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 0a0466f0-c38b-4fcd-a3dd-eac6cfd2361f
-                        Position: {X: -0.26884973, Y: -1.7877183, Z: -9.391197}
+                        Position: {X: -3.2190974, Y: -1.7877183, Z: -9.391197}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -351,7 +404,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 86f13551-9e7e-45a8-8bfc-dde2e4897e37
-                        Position: {X: -4.7715163, Y: -1.7194531, Z: -9.391206}
+                        Position: {X: -7.7217646, Y: -1.7194531, Z: -9.391206}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -384,13 +437,53 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 1d38244c-bdaf-4ccd-b033-8dc193979190
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 4044ef6e-b997-4c8c-92b9-429afffa862a
+                        Position: {X: 9.156657, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 50ab1c52-61ab-4127-8568-ed582344a067
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 0c7b3a19-1631-4570-83da-479d0599d34a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 1d99ef78-f1b9-4092-a77b-1209dda9a3ea
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 083785cf-90fc-431c-9b78-b24259e1b507
-                        Position: {X: 6.4831123, Y: -1.7446135, Z: -9.391222}
+                        Position: {X: 3.5328648, Y: -1.7446135, Z: -9.391222}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -401,13 +494,53 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 1ec8aebf-1c80-4069-abb5-8ab4adfe0131
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 8213b0bd-39b4-4255-a40d-c1dab6d43c96
+                        Position: {X: 5.011681, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 9e69ab21-cff3-41be-bef5-01833471333c
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 136e6314-328f-4fc3-96ca-bd9b9eaf8c9e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 27bd80bf-dfec-4da5-8103-a479b5d1ca24
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: ff1e8247-18c4-4990-b4e0-672149ce4805
-                        Position: {X: 0.24192944, Y: -1.7548708, Z: -9.391208}
+                        Position: {X: -2.7083182, Y: -1.7548708, Z: -9.391208}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -424,7 +557,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 6085229f-700f-45cf-8868-b62492719f48
-                        Position: {X: -3.6564093, Y: -1.7172772, Z: -9.391209}
+                        Position: {X: -6.606657, Y: -1.7172772, Z: -9.391209}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -441,7 +574,7 @@ Hierarchy:
                 Components:
                     f411d182b101d3bd09684729fb924636: !TransformComponent
                         Id: 7f9679ca-aef1-4ab7-aed9-5189ba2c6dfa
-                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Position: {X: 2.6, Y: 0.4912662, Z: -1.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -495,7 +628,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 16fe5809-0898-4366-bb95-5a3150b2cb52
-                        Position: {X: 8.123464, Y: -1.7252157, Z: -9.391232}
+                        Position: {X: 5.173216, Y: -1.7252157, Z: -9.391232}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -512,7 +645,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 08e3fbdf-010a-4021-af28-b392b55ddb8a
-                        Position: {X: 3.633043, Y: -1.7784337, Z: -9.391209}
+                        Position: {X: 0.6827952, Y: -1.7784337, Z: -9.391209}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -565,7 +698,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 29bd2892-f67d-413a-8d84-2ef2d8aca28d
-                        Position: {X: -2.5407205, Y: -1.7000556, Z: -9.391215}
+                        Position: {X: -5.4909687, Y: -1.7000556, Z: -9.391215}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -582,7 +715,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 1ca4ed96-9c05-423f-91e7-22b762622016
-                        Position: {X: 1.9474843, Y: -1.7526947, Z: -9.391211}
+                        Position: {X: -1.0027635, Y: -1.7526947, Z: -9.391211}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -616,7 +749,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: c98e7055-7ddb-404e-a489-46705fe9955d
-                        Position: {X: 8.713909, Y: -1.7252157, Z: -9.391232}
+                        Position: {X: 5.7636614, Y: -1.7252157, Z: -9.391232}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -627,13 +760,53 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 4236883e-2dc7-4566-908d-951adb29ee3d
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 685e458e-9b92-4c80-860d-05f467a4f087
+                        Position: {X: 2.5695052, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 473a85c6-3aa0-4a16-b19c-36bf3c8a7e17
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: a5b7718d-eff4-4e63-b96e-d3f4785b5f7a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 4ab221ec-c3b6-4168-8d46-d6f4db850fc0
                 Name: Defense
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: d309d5e3-3323-484d-8a66-3d3fb241e7f8
-                        Position: {X: 10.985781, Y: -1.8128788, Z: -9.391213}
+                        Position: {X: 8.035533, Y: -1.8128788, Z: -9.391213}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -662,13 +835,53 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 4d0ed508-9899-47e1-bb13-d952663d2c2f
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 75aea517-18ae-4664-b925-5f60109efc30
+                        Position: {X: 1.5164578, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: a6c9943d-f0e0-45c1-92ce-0ad071fcd4a0
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 6946cc9f-b1ba-474d-a729-155f87131306
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 52ebc557-53ac-4a6e-aeb7-f8bdb399a511
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: d8b423ae-98d3-4650-b476-92a04d0da418
-                        Position: {X: 7.5982203, Y: -1.742438, Z: -9.391226}
+                        Position: {X: 4.647972, Y: -1.742438, Z: -9.391226}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -685,7 +898,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: c7f4d3fa-c5e4-407f-a787-65c1d287f2f7
-                        Position: {X: -0.8592957, Y: -1.7877183, Z: -9.391197}
+                        Position: {X: -3.8095434, Y: -1.7877183, Z: -9.391197}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -781,7 +994,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 607c45d0-ebae-4f76-9929-ba67d1acc57d
-                        Position: {X: 4.744597, Y: -1.8231359, Z: -9.391199}
+                        Position: {X: 1.7943492, Y: -1.8231359, Z: -9.391199}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -813,46 +1026,86 @@ Hierarchy:
                 Components:
                     cb9ee38ba069ca81959041ae0c3f93f5: !TransformComponent
                         Id: 9934e049-f90d-467d-913b-061f02132590
-                        Position: {X: 0.0, Y: 0.24392988, Z: 0.0}
+                        Position: {X: 2.8698533, Y: 0.24392988, Z: -9.357495}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            1bc0e76feb21a78f1f94ae6c7a38305d: ref!! c1817e21-e0ea-4e55-a781-07d6c046574d
-                            060d7d7a5833f6a5203c43eebb7fc92f: ref!! 86f13551-9e7e-45a8-8bfc-dde2e4897e37
-                            0b3f396f5923494bd2a0b821f22f71fb: ref!! 34a562e4-ce3d-43de-8fa7-23ee8413c054
-                            e98a5f2fe4da858c375d2c754f3ec73a: ref!! 1e4c74fe-6901-4574-9cc0-ca06316b81d0
-                            f8afc4e5b6e16984d6887162432e7b93: ref!! ff1e8247-18c4-4990-b4e0-672149ce4805
-                            18b34b1eaba62bd3fc4df7a239bc9973: ref!! 99f0a825-4a0b-426f-9cf9-538b8cd0e37a
-                            10f404f23bad97bcb200f51cbd4055e3: ref!! b0c96c4e-8522-4b3a-9aa4-4c086ce90e51
-                            815dbf65a24f1cef96946418bd416183: ref!! 083785cf-90fc-431c-9b78-b24259e1b507
-                            e11350780ca8de3cb9c3a0b83fc46fc1: ref!! e7e4261a-6e15-43b5-96bf-732c55abddda
-                            19598d140e45e38fd92e4cee3a81e04b: ref!! 6085229f-700f-45cf-8868-b62492719f48
-                            ded5bc542f9185a706f4e4329f48475a: ref!! 269d3165-beb0-4aac-8673-c8d01b65f5e9
-                            d7373a2069d4f2e6db6c6ffd5ddee736: ref!! 1ca4ed96-9c05-423f-91e7-22b762622016
-                            b250c9c3a87539d55c79513801d9a770: ref!! 642f7a53-203a-480f-a1aa-27230637a5d8
-                            423cfaf413cd202de70107a25616e29d: ref!! d8b423ae-98d3-4650-b476-92a04d0da418
-                            f7859a8d5c54187c3b361697128330a7: ref!! 811808fa-5be5-497c-9d37-624189d82ba7
-                            95930e6e8f7792550de59398a0d4c533: ref!! 29bd2892-f67d-413a-8d84-2ef2d8aca28d
-                            a0fc08c2bc7667f0700c0c6f10fac189: ref!! b8cb8742-7c5a-42e2-8ef8-8418131d9e38
-                            82bf40a80a16261ea94a368e71927792: ref!! 8c0e6402-ed9c-4f7e-9b9b-5732880c1ec4
-                            60753ca7aac722e4dfaa1388a430bc16: ref!! 16fe5809-0898-4366-bb95-5a3150b2cb52
-                            8b3cece5dd116b9dce7f8325217dfbf5: ref!! c98e7055-7ddb-404e-a489-46705fe9955d
-                            650ad0c10f63bc63067f37b4247c883a: ref!! 5c2432d5-75a8-48a9-8fdc-e4d92466cdfa
-                            3d948c45b233dbb7fa5fb14bad70101b: ref!! 2ee5a193-9bf2-4a5f-bb72-a09cf5d3b373
-                            11c8d1e32cadf2a5d9a68e84c9fbe7d9: ref!! 08e3fbdf-010a-4021-af28-b392b55ddb8a
-                            389484caf1db807715ad551ed0980b13: ref!! 8f76eb3c-cd1e-484a-9492-a60a27f5b374
-                            1777bf6ac7cc59d40c36a7ee9acc2a8f: ref!! 6694faae-b133-4f5a-8c2a-96174ffe2559
-                            a68b32e2a0737f3a2be33bf1d0546e95: ref!! aa141cc5-01a1-4804-bffa-8508d2f83322
-                            c95b48ee744a190ec6ae71e25cb28d7b: ref!! c7f4d3fa-c5e4-407f-a787-65c1d287f2f7
-                            0fd32b1533f26463cafbc725fbc35787: ref!! 0a0466f0-c38b-4fcd-a3dd-eac6cfd2361f
-                            f1c447353c150b54645ec8ac19db253d: ref!! 607c45d0-ebae-4f76-9929-ba67d1acc57d
-                            05cb000a4c6496f8712bb509a61576fd: ref!! 31f46bde-4c3b-47fe-a425-1d81a4d8e040
-                            b34211c13c3712f074ac28302c4ad83c: ref!! e0ab9d80-55ea-4083-850f-b65256f7bb8a
-                            4252b6a57c0cdee92ab0a721f155dcfb: ref!! d309d5e3-3323-484d-8a66-3d3fb241e7f8
+                            0602df1fe819adfd903375c345144c70: ref!! d309d5e3-3323-484d-8a66-3d3fb241e7f8
+                            c0401aa9877264429131e3f678c147ac: ref!! e0ab9d80-55ea-4083-850f-b65256f7bb8a
+                            fe3ad1b2df939a1d6232a728f3d10e05: ref!! 31f46bde-4c3b-47fe-a425-1d81a4d8e040
+                            1b7c5af1edf6f4860c4620b1214557e1: ref!! 607c45d0-ebae-4f76-9929-ba67d1acc57d
+                            151975131a0fee3e4e73ced62c4a9d85: ref!! 0a0466f0-c38b-4fcd-a3dd-eac6cfd2361f
+                            d9af50070743c596ff075e5aa0cd0e45: ref!! c7f4d3fa-c5e4-407f-a787-65c1d287f2f7
+                            308f97f57160a3c5ed7fda696c59559b: ref!! aa141cc5-01a1-4804-bffa-8508d2f83322
+                            fee13e5c7d94ff2e5f6293e2cbd1bc22: ref!! 6694faae-b133-4f5a-8c2a-96174ffe2559
+                            54b367a6bc0da6f5ef48b1ba322482f9: ref!! 8f76eb3c-cd1e-484a-9492-a60a27f5b374
+                            712241043dd477731fe2e14215eb895e: ref!! 08e3fbdf-010a-4021-af28-b392b55ddb8a
+                            ac0859fadfc2d0b87e61dfec9edc1223: ref!! 2ee5a193-9bf2-4a5f-bb72-a09cf5d3b373
+                            826ebd261c26c7f69ed2b9ca6ba97126: ref!! 5c2432d5-75a8-48a9-8fdc-e4d92466cdfa
+                            72dc203240af659576ce521e7febf879: ref!! c98e7055-7ddb-404e-a489-46705fe9955d
+                            b900b8469ba3a32bb8585edf6426f310: ref!! 16fe5809-0898-4366-bb95-5a3150b2cb52
+                            6adf5d8e2944776db8b4417cd76a75d6: ref!! 8c0e6402-ed9c-4f7e-9b9b-5732880c1ec4
+                            41796db190189101509e54cbbcef83a1: ref!! b8cb8742-7c5a-42e2-8ef8-8418131d9e38
+                            9203a96ec0545f6cc9637deb4317f6a3: ref!! 29bd2892-f67d-413a-8d84-2ef2d8aca28d
+                            02877ee2fe9ba2c0c8b7ad15719cf375: ref!! 811808fa-5be5-497c-9d37-624189d82ba7
+                            b088bf3e72cb1f89b41b87e3e025f668: ref!! d8b423ae-98d3-4650-b476-92a04d0da418
+                            d9f52e8d9b473840456fea1b9209c691: ref!! 642f7a53-203a-480f-a1aa-27230637a5d8
+                            7f04b924c54dbb0959c39870db240360: ref!! 1ca4ed96-9c05-423f-91e7-22b762622016
+                            337e6eb967e48d245d4a5068f9f56f4c: ref!! 269d3165-beb0-4aac-8673-c8d01b65f5e9
+                            ad148c6dc9876d001c240dc51e563f2d: ref!! 6085229f-700f-45cf-8868-b62492719f48
+                            aa21e06847d19890867221860bc30c66: ref!! e7e4261a-6e15-43b5-96bf-732c55abddda
+                            facb73c140652886a58b75cbdc3ebaa1: ref!! 083785cf-90fc-431c-9b78-b24259e1b507
+                            c7390edf3f77e4702921e18b5b02a470: ref!! b0c96c4e-8522-4b3a-9aa4-4c086ce90e51
+                            87bf75d0df7b6f84e34fa9008150f582: ref!! 99f0a825-4a0b-426f-9cf9-538b8cd0e37a
+                            60c46fd831e5b478c218b22a31b4ca99: ref!! ff1e8247-18c4-4990-b4e0-672149ce4805
+                            3263714845de95197bc978e0228f0c53: ref!! 1e4c74fe-6901-4574-9cc0-ca06316b81d0
+                            8bdf2b683985e5ba3c406a66127d70c5: ref!! 34a562e4-ce3d-43de-8fa7-23ee8413c054
+                            c96a107499abf65d3edf98c7b36c1c1c: ref!! 86f13551-9e7e-45a8-8bfc-dde2e4897e37
+                            4ae1bd040ad0d5bea82cd7c13816a0cc: ref!! c1817e21-e0ea-4e55-a781-07d6c046574d
                     17c80eb0dd90d46d21b6a2ad3f46ea36: !Ubaldis.WallController,Ubaldis
                         Id: 3c09bf78-f4b7-4cf1-ad85-fa8f46a29395
                         sprites: null
                         hit: false
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 62e05c31-b464-47c0-b1ea-ba29e409d63c
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 072a2cdd-c0ca-47d6-954d-b38037fec15b
+                        Position: {X: 6.2439723, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: e9d667e4-1ab1-42c9-ad85-045fee2a2f61
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: c81e4287-f76d-4e09-9c20-2e17b33475b2
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 649b5516-211a-486f-a1d0-7bcb9227b441
                 Name: Sniper
@@ -898,21 +1151,40 @@ Hierarchy:
                 Components:
                     211f0a87bf99c5b371f1c7b4787bc586: !TransformComponent
                         Id: 6ec0bbbd-4747-45d4-a59d-753e4f3456da
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 0.0, Y: 0.0, Z: -6.5395336}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     8e180cb29f1e08d9bb1383941de0b9e1: !Ubaldis.GameManager,Ubaldis
                         Id: 190885f8-1a0d-4848-a1a1-3282cc982651
                         _wall: !TransformComponent ref!! 9934e049-f90d-467d-913b-061f02132590
+                        _enemyTarget: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
                         _UI: ref!! 2e0c53bf-ca5f-491b-8f15-5fbbb066e29c
+                        spawnRate: 1.0
+                        Enemies:
+                            43dd7698c98e2797a2b454f516972696: 2288a5f8-3979-40b7-8b91-e22e64eb3fab:SimpleEnemy
+                        SpawnPositions:
+                            92eceb7d33f2cbd5dc77d2f4c4c781ea: ref!! 84da62a7-f93e-43ea-b75b-40f1e7b4b596
+                            1012aeea65f0e8937e9e534404c3c153: ref!! c7badba3-3433-4abe-bc1c-51f7d11b0db8
+                            3d87fa55bd6feb725137b79c1977f6f9: ref!! d4a84b59-ad02-44cf-a938-6806bb109115
+                            0ef112520a5bed139b4d71c1f79bd395: ref!! 0b80486a-b7ad-4f07-809f-9c62632975a3
+                            5b1b40b05848f1a7a8e3878fbfefbc98: ref!! b59f0715-c929-4293-9838-3e5c65d723c3
+                            07ba5ab1e04827df4baa63487a83f2ad: ref!! 4d0ed508-9899-47e1-bb13-d952663d2c2f
+                            2bf8762298989c99fc4d47e599f1e8d8: ref!! 4236883e-2dc7-4566-908d-951adb29ee3d
+                            f760154409c32196bc6d6bd2abcc56e8: ref!! a6c87c6e-9424-495e-9280-848b15cd8119
+                            dac4b34fa871c79acd0e91d6d0df1b3f: ref!! 1ec8aebf-1c80-4069-abb5-8ab4adfe0131
+                            7c7ba6786877cfb6db5a34fce249af55: ref!! 62e05c31-b464-47c0-b1ea-ba29e409d63c
+                            96056d03c8de2657383760bdab5fb09f: ref!! 62e05c31-b464-47c0-b1ea-ba29e409d63c
+                            9e4ec09481ded41443b5d50e2a653b78: ref!! aee11409-0102-4b0b-be9d-91d0b866a459
+                            6c76d379210184a07ed54763ed8388ae: ref!! 1d38244c-bdaf-4ccd-b033-8dc193979190
+                            68bf17690713ed4b99a83ae7dcefbbbe: ref!! 98b1b5a4-6961-4f04-8e1c-d43f9497ee53
         -   Entity:
                 Id: 684b5ea2-916f-4a55-ace9-124ff04e8246
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 1e4c74fe-6901-4574-9cc0-ca06316b81d0
-                        Position: {X: 2.640377, Y: -1.833137, Z: -9.520581}
+                        Position: {X: -0.30987078, Y: -1.833137, Z: -9.520581}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 15.174996, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -986,7 +1258,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 8f76eb3c-cd1e-484a-9492-a60a27f5b374
-                        Position: {X: 4.176539, Y: -1.7784337, Z: -9.391209}
+                        Position: {X: 1.2262912, Y: -1.7784337, Z: -9.391209}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -1003,7 +1275,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: b8cb8742-7c5a-42e2-8ef8-8418131d9e38
-                        Position: {X: 2.4727275, Y: -1.7354734, Z: -9.391218}
+                        Position: {X: -0.4775203, Y: -1.7354734, Z: -9.391218}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -1042,7 +1314,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: aa141cc5-01a1-4804-bffa-8508d2f83322
-                        Position: {X: 9.827276, Y: -1.7681766, Z: -9.391222}
+                        Position: {X: 6.8770285, Y: -1.7681766, Z: -9.391222}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -1351,7 +1623,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: b0c96c4e-8522-4b3a-9aa4-4c086ce90e51
-                        Position: {X: 5.8926663, Y: -1.7446135, Z: -9.391222}
+                        Position: {X: 2.9424186, Y: -1.7446135, Z: -9.391222}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -1393,30 +1665,34 @@ Hierarchy:
                         Children:
                             249acd3428186c907b5850348e612f31: ref!! 5e0db090-7795-4a78-a036-c1483dd88296
                     7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
-                        Id: 099db4c5-b14f-4e68-9d34-3789d57c570c
+                        Id: d2bc5087-12d1-409d-8216-ad319959a89f
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
                             CurrentFrame: 6
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
                     6785943006baab2c5c018a14be4bf5d8: !Ubaldis.EnemyController,Ubaldis
-                        Id: a9647e11-cd0f-4730-a0b9-c006c1ce1754
+                        Id: 1562b8ba-0630-4c72-aecc-d1dae9f4ab60
                         health: 100.0
                         speed: 0.5
                         fireRate: 2.0
                         damage: 30
-                        target: ref!! 1335d7ef-970c-4dd9-86dd-6a6be9f7a74c
+                        target: null
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
-                        muzzleFlash: ref!! 26186c15-d1f2-465a-ba12-bc30d53b39cd
-                        stoppingDistance: 5.0
+                        muzzleFlash: ref!! e691798a-a962-40fc-bb0e-a07e75dc1cc6
+                        stoppingDistance: 3.0
                         deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
+            Base:
+                BasePartAsset: 2288a5f8-3979-40b7-8b91-e22e64eb3fab:SimpleEnemy
+                BasePartId: 0eb8ecf6-8ccd-4ab3-bad5-983544fa61d7
+                InstanceId: 69afbebb-ab29-487a-b665-4f6c3bd90d24
         -   Entity:
                 Id: 7cffb3e7-5955-4810-93cf-7a31cc4e25c3
                 Name: Defense
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 31f46bde-4c3b-47fe-a425-1d81a4d8e040
-                        Position: {X: 5.335043, Y: -1.8231359, Z: -9.391199}
+                        Position: {X: 2.3847952, Y: -1.8231359, Z: -9.391199}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -1451,7 +1727,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: e7e4261a-6e15-43b5-96bf-732c55abddda
-                        Position: {X: -4.2468553, Y: -1.7172772, Z: -9.391209}
+                        Position: {X: -7.1971035, Y: -1.7172772, Z: -9.391209}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -1462,13 +1738,53 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 84da62a7-f93e-43ea-b75b-40f1e7b4b596
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 904437fb-00a5-4032-b1c0-9db0938b40bf
+                        Position: {X: -5.3619623, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 16444702-447b-417c-b509-af0d8e4fc88a
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 6de1e719-b451-4a62-850a-90b8f6d32e10
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 8610e94b-9287-4700-8141-db163069df32
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 269d3165-beb0-4aac-8673-c8d01b65f5e9
-                        Position: {X: 1.3570383, Y: -1.7526947, Z: -9.391211}
+                        Position: {X: -1.5932095, Y: -1.7526947, Z: -9.391211}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -1515,6 +1831,46 @@ Hierarchy:
                             CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: 98b1b5a4-6961-4f04-8e1c-d43f9497ee53
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: fd63b86a-8bd8-4d6e-acb8-63909d048d89
+                        Position: {X: 10.881865, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: c23ecf2f-ea6a-47f7-b80d-0d6a1559b3cc
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: b679e8b5-5947-4245-89ff-2993a7c8b368
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: 9afd721c-88ca-486d-bd0a-6ddc88f6768a
@@ -2085,7 +2441,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: e0ab9d80-55ea-4083-850f-b65256f7bb8a
-                        Position: {X: 10.395335, Y: -1.8128788, Z: -9.391213}
+                        Position: {X: 7.4450874, Y: -1.8128788, Z: -9.391213}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2369,6 +2725,46 @@ Hierarchy:
                 BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
                 BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
                 InstanceId: 2a80c50a-219c-4c23-85ec-6c7b0e9711b2
+        -   Folder: SpawnPositions
+            Entity:
+                Id: a6c87c6e-9424-495e-9280-848b15cd8119
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: dfcb2246-5765-442f-8889-bf0c7106d974
+                        Position: {X: 3.712174, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 79de03b5-031d-498b-826e-567980f616fb
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 4c38ff5b-21eb-431d-85fb-c22fc76507c7
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: Tanks
             Entity:
                 Id: a84a7548-680a-4620-9178-794720e54420
@@ -2393,15 +2789,15 @@ Hierarchy:
                 Components:
                     deaf1457ba59b64eb63142c10b9c36b9: !TransformComponent
                         Id: 5e0db090-7795-4a78-a036-c1483dd88296
-                        Position*: {X: 0.3686205, Y: -0.12328273, Z: 0.0}
-                        Rotation*: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Position: {X: 0.3686205, Y: -0.12328273, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     70923e79a93be746a2869fa79b781871: !ParticleSystemComponent
-                        Id: 26186c15-d1f2-465a-ba12-bc30d53b39cd
+                        Id: e691798a-a962-40fc-bb0e-a07e75dc1cc6
                         Control:
                             ResetSeconds: 5.0
-                            Control*: Pause
+                            Control: Pause
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         Speed: 1.0
                         ParticleSystem:
@@ -2448,7 +2844,7 @@ Hierarchy:
                                         ForceTexCoords: false
                                     Spawners:
                                         7a950fef1afb7047aa538aadb79e6891: !SpawnerBurst
-                                            LoopCondition*: OneShot
+                                            LoopCondition: OneShot
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
                                             SpawnCount: 1
@@ -2580,7 +2976,7 @@ Hierarchy:
                                         ForceTexCoords: false
                                     Spawners:
                                         790d7d7371b24e4ea0fd8854a254b9bb: !SpawnerBurst
-                                            LoopCondition*: OneShot
+                                            LoopCondition: OneShot
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
                                             SpawnCount: 10
@@ -2657,16 +3053,16 @@ Hierarchy:
                                             SamplerOptional: null
                                             SeedOffset: 0
             Base:
-                BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
-                BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
-                InstanceId: 066b609b-2985-4677-ae4a-267a39faf30c
+                BasePartAsset: 2288a5f8-3979-40b7-8b91-e22e64eb3fab:SimpleEnemy
+                BasePartId: f9c7d818-ddc9-4687-9b31-6856b832fd9d
+                InstanceId: 69afbebb-ab29-487a-b665-4f6c3bd90d24
         -   Entity:
                 Id: aaf9ee64-b461-4556-9983-32711e99ba8f
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 5c2432d5-75a8-48a9-8fdc-e4d92466cdfa
-                        Position: {X: -2.0177999, Y: -1.743016, Z: -9.391206}
+                        Position: {X: -4.968048, Y: -1.743016, Z: -9.391206}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2699,6 +3095,46 @@ Hierarchy:
                         Children:
                             e0667b76ebf271e1a78b91a7c13d19dc: ref!! 4a5baba1-bf50-41c5-8abb-2b0526c9ee4e
                             0ad89b3c326d384fd8184b6ff68ed4f4: ref!! f3963904-1507-47a5-8245-28dfc50c1d41
+        -   Folder: SpawnPositions
+            Entity:
+                Id: aee11409-0102-4b0b-be9d-91d0b866a459
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: c98333f6-42be-458a-bde7-39585f1dfc2a
+                        Position: {X: 8.103609, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 627cb970-560f-421a-ab6b-11365a6e43b1
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 95699237-77dd-4bb9-a90d-3b7c5e3e16e2
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: Tanks
             Entity:
                 Id: af34d88a-4386-46ae-adbc-f9985dfd2e60
@@ -2723,7 +3159,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 99f0a825-4a0b-426f-9cf9-538b8cd0e37a
-                        Position: {X: 0.8323754, Y: -1.7548708, Z: -9.391208}
+                        Position: {X: -2.1178725, Y: -1.7548708, Z: -9.391208}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2751,13 +3187,53 @@ Hierarchy:
                             CurrentFrame: 8
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: b59f0715-c929-4293-9838-3e5c65d723c3
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 73a76860-ceaa-4bb4-9351-e1f22fc50ca0
+                        Position: {X: -0.09672198, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 46e80fe7-5927-4786-b04d-c3fca99c536e
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: a809afcf-21d5-4759-9112-a91d9d69009e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: b7d13558-16c2-434d-a762-a88bf10014a4
                 Name: Platform
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 34a562e4-ce3d-43de-8fa7-23ee8413c054
-                        Position: {X: 2.049931, Y: -1.833137, Z: -9.520581}
+                        Position: {X: -0.9003168, Y: -1.833137, Z: -9.520581}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 15.174996, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2797,7 +3273,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 2ee5a193-9bf2-4a5f-bb72-a09cf5d3b373
-                        Position: {X: -1.4273539, Y: -1.743016, Z: -9.391206}
+                        Position: {X: -4.3776016, Y: -1.743016, Z: -9.391206}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2814,7 +3290,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 642f7a53-203a-480f-a1aa-27230637a5d8
-                        Position: {X: 7.0077744, Y: -1.742438, Z: -9.391226}
+                        Position: {X: 4.0575266, Y: -1.742438, Z: -9.391226}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2831,7 +3307,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 8c0e6402-ed9c-4f7e-9b9b-5732880c1ec4
-                        Position: {X: 3.0631735, Y: -1.7354734, Z: -9.391218}
+                        Position: {X: 0.11292571, Y: -1.7354734, Z: -9.391218}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2842,6 +3318,46 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: c7badba3-3433-4abe-bc1c-51f7d11b0db8
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: ebb7e1ef-a1bb-4c6a-8818-3c8e61c3fa4b
+                        Position: {X: -3.7263772, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: 652ee40d-e7fe-4582-a12a-2a0696c74c4f
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 5af80c33-c7d5-4a9f-9830-0b8c831b505d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: c898f7a4-5506-4de6-9d5c-e1e25200295f
@@ -2878,7 +3394,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: c1817e21-e0ea-4e55-a781-07d6c046574d
-                        Position: {X: -5.3619623, Y: -1.7194531, Z: -9.391206}
+                        Position: {X: -8.31221, Y: -1.7194531, Z: -9.391206}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2917,7 +3433,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 6694faae-b133-4f5a-8c2a-96174ffe2559
-                        Position: {X: 9.236831, Y: -1.7681766, Z: -9.391222}
+                        Position: {X: 6.286583, Y: -1.7681766, Z: -9.391222}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}
@@ -2928,6 +3444,46 @@ Hierarchy:
                             CurrentFrame: 13
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
+        -   Folder: SpawnPositions
+            Entity:
+                Id: d4a84b59-ad02-44cf-a938-6806bb109115
+                Name: SpawnPosition
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: ddf3c715-b6fb-48de-9927-692b8f29784c
+                        Position: {X: -2.6061127, Y: 7.5787354, Z: -9.391206}
+                        Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
+                        Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: c809d4e5-e382-484e-8cdd-39437a569352
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 13
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+                    edf17bb24753eadc485472fea20b7061: !RigidbodyComponent
+                        Id: 7300f762-ba06-44c2-9743-6ce9a4a6f1fa
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            4e52bb3d4f7944fcc5d0fed8c37016df: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: Snipers
             Entity:
                 Id: e2fd178c-a347-49a1-b9ab-6663c15ace65
@@ -2956,7 +3512,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: 811808fa-5be5-497c-9d37-624189d82ba7
-                        Position: {X: -3.1311665, Y: -1.7000556, Z: -9.391215}
+                        Position: {X: -6.081414, Y: -1.7000556, Z: -9.391215}
                         Rotation: {X: -6.690738E-05, Y: 0.008726278, Z: -0.0076668835, W: 0.9999325}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.5082959}
                         Children: {}

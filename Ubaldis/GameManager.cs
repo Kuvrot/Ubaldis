@@ -8,6 +8,8 @@ using Stride.Input;
 using Stride.Engine;
 using Stride.UI.Controls;
 using System.Runtime.CompilerServices;
+using Stride.Core;
+using SharpDX.MediaFoundation;
 
 namespace Ubaldis
 {
@@ -17,22 +19,28 @@ namespace Ubaldis
         public static EntityComponent wall;
         public EntityComponent _wall;
 
+        public static TransformComponent enemyTarget; //The target that the enemies will move towards.
+        public TransformComponent _enemyTarget;
         public static UIPage UI;
         public UIComponent _UI;
-
-        public Prefab[] enemies;
-        public TransformComponent[] spawnPositions;
         public float spawnRate = 1;
+        [DataMember]
+        public List<Prefab> Enemies {get; set;} = new List<Prefab>() ;
+        
+        [DataMember]
+        public List<Entity> SpawnPositions {get; set;} = new List<Entity>();
 
         public static int health = 3000;
 
-
+        public static List<Entity> EnemiesList { get; set; } = new List<Entity>();
+  
         private float _clock = 0;
         public override void Start()
         {
             wall = _wall;
             UI = _UI.Page;
             _clock = spawnRate;
+            enemyTarget = _enemyTarget;
         }
 
         public override void Update()
@@ -54,14 +62,19 @@ namespace Ubaldis
             {
                 //Spawn enemy
                 Random random = new Random();
-                var e = enemies[random.Next(0 , enemies.Length)].Instantiate();
+                var e = Enemies[random.Next(0 , Enemies.Count)].Instantiate();
 
                 foreach (var entity in e)
                 {
                     if (entity.Transform != null)
                     {
-                        entity.Transform.Position = spawnPositions[random.Next(0 , spawnPositions.Length)].Entity.Transform.Position;
-                        entity.Transform.Position.Z -= 10;
+                        entity.Transform.Position = SpawnPositions[random.Next(0 , SpawnPositions.Count)].Transform.Position;
+                        switch (random.Next(0 , 3)) {
+                            case 0:
+                                entity.Transform.Position.X -= 2; break;
+                            case 1:
+                                entity.Transform.Position.X += 2; break;
+                        }
                     }
 
                     Entity.Scene.Entities.Add(entity);

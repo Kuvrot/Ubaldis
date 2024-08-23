@@ -22,7 +22,7 @@ namespace Ubaldis
         public TransformComponent target;
         public Prefab projectile;
         public ParticleSystemComponent muzzleFlash;
-        public float stoppingDistance = 6;
+        public double stoppingDistance = 6;
 
 
         public Prefab deathVFX;
@@ -31,14 +31,22 @@ namespace Ubaldis
         private float _distance = 0f;
         public override void Start()
         {
-             muzzleFlash.ParticleSystem.Stop();
+            GameManager.EnemiesList.Add(Entity);
+            target = GameManager.enemyTarget;
+            muzzleFlash.ParticleSystem.Stop();
+
+            stoppingDistance = (new Random().NextDouble() * 4) + 1; //Stopping distance will be randomized
         }
 
         public override void Update()
         {
-            _distance = Vector3.Distance(target.Position , Entity.Transform.Position);
-                
-            if (_distance <= stoppingDistance)
+            if (target == null)
+            {
+                target = GameManager.enemyTarget;
+            }
+
+            //_distance = Vector3.Distance(target.Position , Entity.Transform.Position);
+            if (Entity.Transform.Position.Y <= stoppingDistance)
             {
                 if (_clock <= 0)
                 {

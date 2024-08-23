@@ -30,6 +30,11 @@ namespace Ubaldis
 
         public override void Update()
         {
+            if (target == null)
+            {
+                FindTarget();
+            }
+
             LookTarget();
 
             if (_clock <= 0)
@@ -86,6 +91,11 @@ namespace Ubaldis
             target.Entity.Get<EnemyController>().GetDamage(damage);
 
             muzzleFlash.ParticleSystem.ResetSimulation(); //Muzzle flash resets
+        }
+
+        private void FindTarget()
+        {
+            target = GameManager.EnemiesList[new Random().Next(0, GameManager.EnemiesList.Count)].Transform;
         }
     }
 }
