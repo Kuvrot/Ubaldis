@@ -48,6 +48,7 @@ Hierarchy:
         - ref!! aee11409-0102-4b0b-be9d-91d0b866a459
         - ref!! 1d38244c-bdaf-4ccd-b033-8dc193979190
         - ref!! 98b1b5a4-6961-4f04-8e1c-d43f9497ee53
+        - ref!! f0dbb8b6-be87-4122-9694-14fdfb58ba0e
     Parts:
         -   Entity:
                 Id: 09c4cdb1-81ad-4cb2-85d8-68b837baa51a
@@ -825,7 +826,7 @@ Hierarchy:
                 Components:
                     fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
                         Id: a06a2fdb-0152-4c1a-bdee-a5f1535a4d66
-                        Position: {X: -0.17089081, Y: -2.8697937, Z: -9.384153}
+                        Position: {X: -1.4176786, Y: -2.8697937, Z: -9.384153}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.25, Y: 0.25, Z: 0.25}
                         Children: {}
@@ -833,7 +834,7 @@ Hierarchy:
                         Id: 14bb9973-40cc-450d-87d0-9257d44a102d
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
-                            CurrentFrame: 13
+                            CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
         -   Folder: SpawnPositions
@@ -936,8 +937,8 @@ Hierarchy:
                         Id: 1e7ef2c2-1916-45f3-99a9-b4d4863d31bc
                         allyType: 0
                         health: 100.0
-                        fireRate: 0.25
-                        damage: 25.0
+                        fireRate: 0.5
+                        damage: 15.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 7a7a490c-3929-4233-b314-ac55b057d7a2
@@ -949,6 +950,279 @@ Hierarchy:
                         Children:
                             e0667b76ebf271e1a78b91a7c13d19dc: ref!! 260c539d-e8d0-41d2-bf64-edfb9818ed42
                             0ad89b3c326d384fd8184b6ff68ed4f4: ref!! bc2de66b-724e-47e1-8c50-847eacb0d061
+        -   Entity:
+                Id: 565f5a28-ca7a-4739-a075-7c6874913afa
+                Name: Muzzle Flash
+                Components:
+                    deaf1457ba59b64eb63142c10b9c36b9: !TransformComponent
+                        Id: 132dbb7b-bdf7-47ff-b309-85687b0d63ca
+                        Position*: {X: 0.5377071, Y: -0.21481967, Z: 0.0}
+                        Rotation*: {X: 0.0, Y: 0.0, Z: -0.69383067, W: 0.72013813}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    70923e79a93be746a2869fa79b781871: !ParticleSystemComponent
+                        Id: 50a4dbd8-660a-4a1e-bce5-2ad3b788740f
+                        Control:
+                            ResetSeconds: 5.0
+                            Control*: Play
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Speed: 1.0
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: null
+                            Emitters:
+                                bdbf4692944fa34b93ac2c0b4cdaa06e:
+                                    EmitterName: Fire01
+                                    ParticleLifetime: {X: 0.08, Y: 0.08}
+                                    SortingPolicy: ByDepth
+                                    ShapeBuilder: !ShapeBuilderOrientedQuad
+                                        SamplerPosition: null
+                                        SamplerSize: !ComputeCurveSamplerFloat
+                                            Curve: !ComputeAnimationCurveFloat
+                                                KeyFrames:
+                                                    3fb40769a2c5d84c8fb0edff54cbde11:
+                                                        Key: 0.0
+                                                        Value: 1.0
+                                                        TangentType: Linear
+                                                    656dedb32f540b4eb9b629fef2d4d9b8:
+                                                        Key: 1.0
+                                                        Value: 2.0
+                                                        TangentType: Linear
+                                        ScaleLength: true
+                                        LengthFactor: 1.3
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 1.0
+                                        ComputeColor: !ComputeBinaryColor
+                                            Operator: Multiply
+                                            LeftChild: !ComputeFloat4
+                                                Value: {X: 50.0, Y: 50.0, Z: 50.0, W: 1.0}
+                                            RightChild: !ComputeBinaryColor
+                                                Operator: Multiply
+                                                LeftChild: !ComputeTextureColor
+                                                    Texture: 078e5195-2425-43e2-bceb-5b4f9770e8cf:Textures/MuzzleFlash
+                                                    FallbackValue:
+                                                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                    Scale: {X: 1.0, Y: 1.0}
+                                                    Offset: {X: 0.0, Y: 0.0}
+                                                    Swizzle: null
+                                                RightChild: !ComputeVertexStreamColor
+                                                    Stream*: !ColorVertexStreamDefinition {}
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        7a950fef1afb7047aa538aadb79e6891: !SpawnerBurst
+                                            LoopCondition*: OneShot
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 1
+                                    Initializers:
+                                        4fbcfc89c8d0a748947f57b3b59a1035: !InitialPositionSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            PositionMin: {X: 0.0, Y: 0.4, Z: 0.0}
+                                            PositionMax: {X: 0.0, Y: 0.4, Z: 0.0}
+                                            Interpolate: false
+                                        ed042b61eea8264b8fc3665ca26b539f: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: 0.0, Y: 0.8, Z: 0.0}
+                                            VelocityMax: {X: 0.0, Y: 0.8, Z: 0.0}
+                                        791ead271bed7a4ca1078a956c6782cb: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 0.5
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 1.0, Y: 1.0}
+                                    Updaters:
+                                        d78f984c59b2d442bee5d592a099196c: !UpdaterSpeedToDirection
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                        d9ac87f27a3e2442957d69355b2f037c: !UpdaterColorOverTime
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            SamplerMain: !ComputeCurveSamplerColor4
+                                                Curve: !ComputeAnimationCurveColor4
+                                                    KeyFrames:
+                                                        5685808a440d074398006e47fcd9ea4d:
+                                                            Key: 0.0
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                            TangentType: Linear
+                                                        e6917016e7d70849a3bdcdadb129181e:
+                                                            Key: 0.5
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.1}
+                                                            TangentType: Linear
+                                            SamplerOptional: null
+                                            SeedOffset: 0
+                                a1e76b90974d714aa991ec6a16af22a6:
+                                    EmitterName: Fire02
+                                    ParticleLifetime: {X: 0.1, Y: 0.1}
+                                    DrawPriority: 5
+                                    SortingPolicy: ByDepth
+                                    ShapeBuilder: !ShapeBuilderBillboard
+                                        SamplerPosition: null
+                                        SamplerSize: !ComputeCurveSamplerFloat
+                                            Curve: !ComputeAnimationCurveFloat
+                                                KeyFrames:
+                                                    572b84240f0acd4c976160c15d1b79d8:
+                                                        Key: 0.0
+                                                        Value: 0.0
+                                                        TangentType: Linear
+                                                    9d0d99b19c8bff4f9593c04b42514900:
+                                                        Key: 0.5
+                                                        Value: 2.0
+                                                        TangentType: Linear
+                                                    9eb5ab0949f67647a755fbe64fc880f4:
+                                                        Key: 1.0
+                                                        Value: 0.0
+                                                        TangentType: Linear
+                                        SamplerRotation: null
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 1.0
+                                        ComputeColor: !ComputeBinaryColor
+                                            Operator: Multiply
+                                            LeftChild: !ComputeFloat4
+                                                Value: {X: 10.0, Y: 10.0, Z: 10.0, W: 1.0}
+                                            RightChild: !ComputeBinaryColor
+                                                Operator: Multiply
+                                                LeftChild: !ComputeTextureColor
+                                                    Texture: e1f01f3a-44fa-4288-917a-d24692beb01f:Textures/Muzzleflash02
+                                                    FallbackValue:
+                                                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                    Scale: {X: 1.0, Y: 1.0}
+                                                    Offset: {X: 0.0, Y: 0.0}
+                                                    Swizzle: null
+                                                RightChild: !ComputeVertexStreamColor
+                                                    Stream: !ColorVertexStreamDefinition {}
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        790d7d7371b24e4ea0fd8854a254b9bb: !SpawnerBurst
+                                            LoopCondition*: OneShot
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 10
+                                    Initializers:
+                                        240663e569da164899e641ff0e28f475: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: 0.0, Y: 3.0, Z: 0.0}
+                                            VelocityMax: {X: 0.0, Y: 4.0, Z: 0.0}
+                                        b1bf3cb0d41f91468afbb55b5f7184d8: !InitialPositionSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            PositionMin: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            PositionMax: {X: 0.0, Y: 0.2, Z: 0.0}
+                                            Interpolate: false
+                                        f959f629b26c06429f49d3db77f16038: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 0.5
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 1.0, Y: 1.0}
+                                    Updaters:
+                                        150385996adb85449c8d21ff415dcb61: !UpdaterColorOverTime
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            SamplerMain: !ComputeCurveSamplerColor4
+                                                Curve: !ComputeAnimationCurveColor4
+                                                    KeyFrames:
+                                                        14b719f14cb80b4e87fa847d19b11f55:
+                                                            Key: 0.0
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.5}
+                                                            TangentType: Linear
+                                                        895e803c27276543841b3060281b2288:
+                                                            Key: 0.5
+                                                            Value: {R: 1.0, G: 1.0, B: 1.0, A: 0.1}
+                                                            TangentType: Linear
+                                            SamplerOptional: null
+                                            SeedOffset: 0
+            Base:
+                BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
+                BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
+                InstanceId: a1c97a2e-9d96-4999-bdad-6ea2b1d29b90
         -   Folder: Snipers
             Entity:
                 Id: 574443ff-02e0-43e0-b0f4-cd14a7632522
@@ -958,8 +1232,8 @@ Hierarchy:
                         Id: fd5cbd13-ef31-4672-ad8f-5ba47a8702d1
                         allyType: 0
                         health: 100.0
-                        fireRate: 0.25
-                        damage: 25.0
+                        fireRate: 0.5
+                        damage: 15.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 053831d5-4730-4f34-aac3-3c6340239f7b
@@ -1133,8 +1407,8 @@ Hierarchy:
                         Id: 99610290-0c79-4a3c-ab9a-c017c30dd7a8
                         allyType: 0
                         health: 100.0
-                        fireRate: 0.25
-                        damage: 25.0
+                        fireRate: 0.5
+                        damage: 15.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 4f482fd0-951b-4249-bfd3-417376a050c6
@@ -1296,8 +1570,8 @@ Hierarchy:
                         Id: 0bc9a3b7-e110-4ee9-a15e-3d2fb7ff08a3
                         allyType: 0
                         health: 100.0
-                        fireRate: 0.25
-                        damage: 25.0
+                        fireRate: 0.5
+                        damage: 15.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 4cbc8e4d-4a73-4456-841c-70cb8f3ac811
@@ -1720,7 +1994,7 @@ Hierarchy:
                         Id: 1a036b68-ad0f-4f68-9144-7507aa7f1a70
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
-                            CurrentFrame: 9
+                            CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
         -   Entity:
@@ -3084,8 +3358,8 @@ Hierarchy:
                         Id: 51f2d8ff-16a7-4b73-98a1-28309eacbe2b
                         allyType: 0
                         health: 100.0
-                        fireRate: 0.25
-                        damage: 25.0
+                        fireRate: 0.5
+                        damage: 15.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! e0d9639e-4146-4d7b-bbfd-2d31c9dcd091
@@ -3152,7 +3426,7 @@ Hierarchy:
                         Id: 14810fb0-640d-4ccb-9b48-bd571957d8c3
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
-                            CurrentFrame: 9
+                            CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
         -   Entity:
@@ -3392,6 +3666,23 @@ Hierarchy:
                         deathVFX: b997cbf5-e9b6-4a7e-9398-bba64300e1fc:EnemyDeath
                         dead: false
         -   Entity:
+                Id: cb9f9a63-2dd6-4984-b4b3-f3fa962940cd
+                Name: Sniper
+                Components:
+                    fd8fd569e19abde7d9373f07a48b2300: !TransformComponent
+                        Id: 8de9b116-9153-447b-bd48-bb02af1c7342
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 3.4567868E-10, Y: 3.1200428E-10, Z: -0.8389847, W: -0.544155}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children: {}
+                    7d9c2f3b544db2f8fca3d97b7e2c791a: !SpriteComponent
+                        Id: c5d19fd3-c96b-43a9-b449-8706edff11e5
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
+                            CurrentFrame: 9
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        BlendMode: AlphaBlend
+        -   Entity:
                 Id: ccd59e26-3b27-4480-ba13-8aed70680f89
                 Name: Platform
                 Components:
@@ -3496,8 +3787,8 @@ Hierarchy:
                         Id: 9a7d0747-46d2-45bf-a8ed-4a3ab2512186
                         allyType: 0
                         health: 100.0
-                        fireRate: 0.25
-                        damage: 25.0
+                        fireRate: 0.5
+                        damage: 15.0
                         target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
                         projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
                         muzzleFlash: ref!! 7fffc2ba-aeee-4992-af01-570e3633a220
@@ -3799,6 +4090,28 @@ Hierarchy:
                 BasePartAsset: 91a17444-8dc3-436e-b0ed-0f56e9386a3c:VFXPrefabs/vfx-Muzzleflash
                 BasePartId: 404e4378-40d6-47d6-a176-59e9ebfefef6
                 InstanceId: 382b4f44-57fd-4054-a871-e1e7091e73ba
+        -   Folder: Tanks
+            Entity:
+                Id: f0dbb8b6-be87-4122-9694-14fdfb58ba0e
+                Name: Sniper
+                Components:
+                    21533fc6f99bdc0340a97c329c42937f: !Ubaldis.AllyController,Ubaldis
+                        Id: ade9a19f-24b1-43b5-9ad1-481528e8eb7e
+                        allyType: 0
+                        health: 100.0
+                        fireRate: 5.0
+                        damage: 250.0
+                        target: !TransformComponent ref!! 203c1400-46ca-4245-8b1b-e7c9bd9ca7ad
+                        projectile: ca32a0de-4127-4a90-947f-844ca29b41a7:BulletController
+                        muzzleFlash: ref!! 50a4dbd8-660a-4a1e-bce5-2ad3b788740f
+                    78a98a5ebefd0d0a38f9da3a87cd39b7: !TransformComponent
+                        Id: db830aa7-3341-45e2-8193-c695095d6195
+                        Position: {X: 0.26256323, Y: -2.6258378, Z: -9.266797}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            e0667b76ebf271e1a78b91a7c13d19dc: ref!! 132dbb7b-bdf7-47ff-b309-85687b0d63ca
+                            0ad89b3c326d384fd8184b6ff68ed4f4: ref!! 8de9b116-9153-447b-bd48-bb02af1c7342
         -   Entity:
                 Id: f43c42f5-09eb-4209-88ed-446f68b0df72
                 Name: Muzzle Flash
@@ -4087,7 +4400,7 @@ Hierarchy:
                         Id: fb29be80-b9b6-41c0-8c8e-0e4153725484
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 10f31d5e-b32e-4365-848a-ad0906cdea58:sprites/SpriteSheet
-                            CurrentFrame: 9
+                            CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         BlendMode: AlphaBlend
         -   Folder: null
