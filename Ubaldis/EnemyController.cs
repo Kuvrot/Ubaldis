@@ -110,6 +110,8 @@ namespace Ubaldis
                 Entity.Scene.Entities.Add(entity);
             }
 
+            GameManager.money += 12;
+            GameManager.EnemiesList.Remove(Entity);
             Entity.Scene.Entities.Remove(Entity);
             Entity.Dispose();
             dead = true;

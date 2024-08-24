@@ -15,6 +15,7 @@ namespace Ubaldis
 {
     public class GameManager : SyncScript
     {
+        public static int money = 0;
         public static float deltaTime;
         public static EntityComponent wall;
         public EntityComponent _wall;
@@ -53,6 +54,9 @@ namespace Ubaldis
             var ht = UI.RootElement.FindName("healthText") as TextBlock;
             ht.Text = "3000/" + health.ToString();
 
+            var m = UI.RootElement.FindName("scoreText") as TextBlock;
+            m.Text = "$" + money.ToString();
+            
             SpawningEnemies();
         }
 
