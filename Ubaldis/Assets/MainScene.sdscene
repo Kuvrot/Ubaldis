@@ -1511,6 +1511,9 @@ Hierarchy:
                             9e4ec09481ded41443b5d50e2a653b78: ref!! aee11409-0102-4b0b-be9d-91d0b866a459
                             6c76d379210184a07ed54763ed8388ae: ref!! 1d38244c-bdaf-4ccd-b033-8dc193979190
                             68bf17690713ed4b99a83ae7dcefbbbe: ref!! 98b1b5a4-6961-4f04-8e1c-d43f9497ee53
+                    8ae7cfc742c7cf060559e351dbb53ae7: !Ubaldis.UIManager,Ubaldis
+                        Id: 945cbfd1-b8d9-411a-b68b-0f8a6b4fadfe
+                        showStore: false
         -   Entity:
                 Id: 684b5ea2-916f-4a55-ace9-124ff04e8246
                 Name: Platform

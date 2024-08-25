@@ -28,7 +28,6 @@ namespace Ubaldis
         public Prefab deathVFX;
 
         private float _clock = 2f;
-        private float _distance = 0f;
 
         public bool dead = false;
 
@@ -48,7 +47,6 @@ namespace Ubaldis
                 target = GameManager.enemyTarget;
             }
 
-            //_distance = Vector3.Distance(target.Position , Entity.Transform.Position);
             if (Entity.Transform.Position.Y <= stoppingDistance)
             {
                 if (_clock <= 0)

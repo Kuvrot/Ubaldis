@@ -20,9 +20,34 @@ Hierarchy:
                     8ca71d8150ee76ff5c1623c76195a8b5: !Slider ref!! 0c270d24-9988-4bfa-9bc6-6cc5432d422f
                     4d575311a54b5948675ed2337c03f05c: !TextBlock ref!! b04d39fe-3900-4b08-8902-4a3b1a113299
                     cfcd88295852676cdfb0a6c52d894e56: !TextBlock ref!! 40832c68-76ed-4185-aa2e-8d911840539a
+                    dd3f434a0c349f72697d629545a1255c: !Button ref!! 58c9360e-913c-49a6-93fa-1f43e5d2fcfd
+                    566009b31681d0834030b972034cee39: !Canvas ref!! 6d230139-64ee-4f29-884f-774fb59a9411
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}
+        -   UIElement: !Button
+                Id: 0707c2af-bc97-477e-bb53-5d5536c97f5f
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 354.4977
+                Height: 34.65625
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 50.0, Top: 55.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: repairShield
+                Content: !TextBlock ref!! ea98b206-7467-45bb-8fa5-84be82883b32
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
         -   UIElement: !Slider
                 Id: 0c270d24-9988-4bfa-9bc6-6cc5432d422f
                 DependencyProperties: {}
@@ -57,6 +82,29 @@ Hierarchy:
                     Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
                     CurrentFrame: 8
                 TickOffset: 13.0
+        -   UIElement: !Button
+                Id: 2e22fdcf-f81d-4305-8056-257b929a3257
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 354.4977
+                Height: 34.65625
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 500.0, Top: 205.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: dropNuke
+                Content: !TextBlock ref!! 5a1edd34-ca12-4218-bb13-bcc7c566cf2b
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
         -   UIElement: !TextBlock
                 Id: 40832c68-76ed-4185-aa2e-8d911840539a
                 DependencyProperties: {}
@@ -74,6 +122,264 @@ Hierarchy:
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
+                Id: 409b28a7-c8c3-45d6-af14-20226cf1b4b6
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: tankImprovements
+                Text: IMPROVE TANK 0/1 ($1000)
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 42441cb8-a87d-4ab5-89c1-0f769c11f193
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: sniperImprovements
+                Text: IMPROVE SNIPER 0/3 ($450)
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Button
+                Id: 58c9360e-913c-49a6-93fa-1f43e5d2fcfd
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 129.0
+                Height: 41.0
+                HorizontalAlignment: Right
+                VerticalAlignment: Bottom
+                Margin: {Right: 14.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: storeToggle
+                Content: !TextBlock ref!! 85184f3f-d98c-4da8-9f25-f9fbec862e0f
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !TextBlock
+                Id: 5a1edd34-ca12-4218-bb13-bcc7c566cf2b
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: DROP NUKE ($10000)
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 5a8752c6-cd36-406d-adaf-23020780ed39
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 30.198383
+                Height: 47.406246
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: "×"
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 50.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Button
+                Id: 5b26e3d7-d4d8-4738-bdd4-d7f11b92eaff
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 354.4977
+                Height: 34.65625
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 50.0, Top: 155.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: deployTank
+                Content: !TextBlock ref!! 75ad2b0b-1d20-42de-9193-a28ae8c2497f
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !Canvas
+                Id: 6d230139-64ee-4f29-884f-774fb59a9411
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 200}
+                Width: 933.0
+                Height: 454.0
+                Margin: {Left: 189.0, Top: 108.0, Right: 158.0, Bottom: 158.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: store
+                Children:
+                    87d7b309dae7ef782dbea62e5bb50c5e: !TextBlock ref!! 92b5baa2-1a3f-46ab-891a-22ac206d170e
+                    5e8fede10f1775814722206bc9736936: !Button ref!! 0707c2af-bc97-477e-bb53-5d5536c97f5f
+                    e0b696590798e76d21301278a71800b4: !Button ref!! 849b7142-af36-44f7-bda8-349959ac27be
+                    e4426efe55a48dbc2d37eb77021697da: !Button ref!! 9fba0718-4a26-4112-8df7-0f5b333f67b8
+                    9dbd41e651c9d37bb8c3f5e241d8e9e7: !Button ref!! 8aa35721-f1df-466e-b404-9936a3e700d8
+                    84e838ed8f4b7d8d0d061c0390476ec6: !Button ref!! 2e22fdcf-f81d-4305-8056-257b929a3257
+                    593330680b91c99acebfa00cb8905421: !Button ref!! 5b26e3d7-d4d8-4738-bdd4-d7f11b92eaff
+                    9db78e6a0096f239e2d36b377c701302: !Button ref!! 97ebbaf0-43d6-43e0-ad10-e24e3c366ded
+        -   UIElement: !TextBlock
+                Id: 75ad2b0b-1d20-42de-9193-a28ae8c2497f
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: tankNumber
+                Text: DEPLOY TANK 0/3 (450)
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Button
+                Id: 849b7142-af36-44f7-bda8-349959ac27be
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 354.4977
+                Height: 34.65625
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 50.0, Top: 105.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: deploySniper
+                Content: !TextBlock ref!! bc80d17f-4f94-4f40-be85-e47041c29b28
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !TextBlock
+                Id: 85184f3f-d98c-4da8-9f25-f9fbec862e0f
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                Text: STORE
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Button
+                Id: 8aa35721-f1df-466e-b404-9936a3e700d8
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 354.4977
+                Height: 34.65625
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 500.0, Top: 155.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: improveTank
+                Content: !TextBlock ref!! 409b28a7-c8c3-45d6-af14-20226cf1b4b6
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !TextBlock
+                Id: 92b5baa2-1a3f-46ab-891a-22ac206d170e
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 933.0
+                Height: 22.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {}
+                Text: STORE
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !Button
+                Id: 97ebbaf0-43d6-43e0-ad10-e24e3c366ded
+                DependencyProperties: {}
+                BackgroundColor: {R: 110, G: 0, B: 0, A: 255}
+                DrawLayerNumber: 2
+                Width: 59.670013
+                Height: 45.65625
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 895.4977, Top: -12.65625}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: closeStore
+                Content: !TextBlock ref!! 5a8752c6-cd36-406d-adaf-23020780ed39
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !Button
+                Id: 9fba0718-4a26-4112-8df7-0f5b333f67b8
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 354.4977
+                Height: 34.65625
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 500.0, Top: 105.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: improveSniper
+                Content: !TextBlock ref!! 42441cb8-a87d-4ab5-89c1-0f769c11f193
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !TextBlock
                 Id: b04d39fe-3900-4b08-8902-4a3b1a113299
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
@@ -90,3 +396,29 @@ Hierarchy:
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
                 TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: bc80d17f-4f94-4f40-be85-e47041c29b28
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: sniperNumber
+                Text: DEPLOY SNIPER 0/6 ($250)
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: ea98b206-7467-45bb-8fa5-84be82883b32
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                Text: REPAIR SHIELD +150 ($70)
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
